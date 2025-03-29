@@ -157,7 +157,7 @@
             sites.forEach(site => {
                 const option = document.createElement('option');
                 option.value = site.commune;
-                option.textContent = site.commune;
+                option.textContent = site.nom;
                 cityDropdown.appendChild(option);
             });
         }
