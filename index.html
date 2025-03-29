@@ -156,8 +156,8 @@
             const cityDropdown = document.getElementById('cityDropdown');
             sites.forEach(site => {
                 const option = document.createElement('option');
-                option.value = site.nom;
-                option.textContent = site.nom;
+                option.value = site.commune;
+                option.textContent = site.commune;
                 cityDropdown.appendChild(option);
             });
         }
@@ -351,19 +351,42 @@
             });
         }
 
-        function listLowWindPeriods(dates, windSpeeds, windDirections, windGusts) {
+        function listLowWindPeriods(dates, windSpeeds, windDirections, windGusts, siteOrientation) {
+            // Supprimer l'ancienne fenêtre si elle existe
+            const existingResultsContainer = document.getElementById('lowWindPeriods');
+            if (existingResultsContainer) {
+                existingResultsContainer.remove();
+            }
+
+            // Créer un nouveau conteneur pour les résultats
             const resultsContainer = document.createElement('div');
+            resultsContainer.id = 'lowWindPeriods'; // Ajoutez un ID unique pour identifier ce conteneur
             resultsContainer.classList.add('mt-6', 'p-4', 'bg-blue-50', 'rounded-lg', 'shadow-md');
-            
+    
             const title = document.createElement('h4');
-            title.textContent = 'Périodes favorables: vent < 15 km/h, rafales < 25 km/h, direction entre NNO et E';
+            title.textContent = `Périodes favorables: vent < 15 km/h, rafales < 25 km/h, direction proche de ${siteOrientation}`;
             title.classList.add('text-lg', 'font-semibold', 'mb-4');
             resultsContainer.appendChild(title);
 
             const list = document.createElement('ul');
             list.classList.add('list-disc', 'pl-6');
 
-            let northCount = 0;
+            let perfectOrientation = 0;
+
+               // Convertir l'orientation du site en degrés
+            const orientationDegrees = Object.keys(WIND_DIRECTIONS).find(
+                key => WIND_DIRECTIONS[key] === siteOrientation
+            );
+
+            if (!orientationDegrees) {
+                console.error(`Orientation inconnue : ${siteOrientation}`);
+                return;
+            }
+
+            const orientationRange = {
+                min: (orientationDegrees - 45 + 360) % 360, // 45° avant
+                max: (parseFloat(orientationDegrees) + 45) % 360 // 45° après
+            };
 
             for (let i = 0; i < dates.length; i++) {
                 const speed = windSpeeds[i];
@@ -371,20 +394,26 @@
                 const gust = windGusts[i];
                 const directionText = getWindDirectionText(direction);
 
+                // Vérifier si la direction est dans la plage acceptable
+                const isDirectionValid = 
+                    (orientationRange.min <= orientationRange.max && direction >= orientationRange.min && direction <= orientationRange.max) ||
+                    (orientationRange.min > orientationRange.max && (direction >= orientationRange.min || direction <= orientationRange.max));
+
+
                 // Extract the hour from the date
                 const rawDate = dates[i];
                 const hour = rawDate.split(' ')[2].replace('h', '').trim();
 
                 // Check if wind speed is < 20, gusts < 30 and direction is between NNO and E
-                if (speed < 15 && gust < 25 && (direction >= 337.5 || direction <= 90) && hour >= 10 && hour <= 19) {
+                if (speed < 15 && gust < 25 && isDirectionValid && hour >= 10 && hour <= 19) {
                     console.log(`Valid: ${hour} - ${speed} km/h - Rafales: ${gust} km/h - ${directionText}`);
                     const listItem = document.createElement('li');
                     listItem.textContent = `${dates[i]} - ${speed.toFixed(1)} km/h - Rafales: ${gust.toFixed(1)} km/h - ${directionText}`;
                     list.appendChild(listItem);
 
                     // Count occurrences of 'N'
-                    if (directionText === 'N') {
-                        northCount++;
+                    if (directionText === siteOrientation) {
+                        perfectOrientation++;
                     }
                 }
             }
@@ -392,10 +421,10 @@
             resultsContainer.appendChild(list);
 
             // Add the count of 'N' occurrences
-            const northCountText = document.createElement('p');
-            northCountText.textContent = `Top : Le vent vient de 'N' ${northCount} fois.`;
-            northCountText.classList.add('mt-4', 'font-bold');
-            resultsContainer.appendChild(northCountText);
+            const perfectOrientationText = document.createElement('p');
+            perfectOrientationText.textContent = `Top : Le vent vient de ${siteOrientation} : ${perfectOrientation} fois.`;
+            perfectOrientationText.classList.add('mt-4', 'font-bold');
+            resultsContainer.appendChild(perfectOrientationText);
 
             // Append the results to the weather info section
             document.getElementById('weatherInfo').appendChild(resultsContainer);
@@ -420,7 +449,7 @@
 
             try {
                 // Charger les données du fichier JSON
-                const site = sites.find(site => site.nom === city);
+                const site = sites.find(site => site.commune === city);
 
                 if (!site) {
                     throw new Error('Données du site introuvables');
@@ -483,7 +512,7 @@
                 // Create charts - removed the first chart and kept only gusts chart and direction chart
                 createWindGustsChart(formattedDates, hourlyWindSpeeds, hourlyWindGusts);
                 createWindDirectionChart(formattedDates, hourlyWindDirections);
-                listLowWindPeriods(formattedDates, hourlyWindSpeeds, hourlyWindDirections, hourlyWindGusts);
+                listLowWindPeriods(formattedDates, hourlyWindSpeeds, hourlyWindDirections, hourlyWindGusts, site.orientation);
                 
                 // Show weather info
                 weatherInfo.classList.remove('hidden');
