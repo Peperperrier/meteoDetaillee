@@ -12,8 +12,10 @@
         <div class="text-center mb-6">
             <h1 class="text-3xl font-bold text-blue-600">Météo Détaillée</h1>
             <div class="flex mt-4">
-                <input type="text" id="cityInput" placeholder="Entrez une ville" 
+                <select id="cityDropdown" 
                     class="flex-grow p-2 border rounded-l-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    <option value="">Sélectionnez une ville</option>
+                </select>
                 <button onclick="fetchWeather()" 
                     class="bg-blue-500 text-white p-2 rounded-r-lg hover:bg-blue-600 transition">
                     Rechercher
@@ -24,6 +26,7 @@
         <div id="weatherInfo" class="hidden">
             <div class="text-center">
                 <h2 id="cityName" class="text-2xl font-semibold"></h2>
+                <div id="additionalInfo" class="text-lg text-gray-700 mt-2"></div> <!-- Conteneur pour les infos supplémentaires -->
                 <div id="temperature" class="text-5xl font-bold text-blue-700 my-4"></div>
                 
                 <div class="grid grid-cols-3 gap-4 mt-6">
@@ -62,6 +65,105 @@
     </div>
 
     <script>
+        const sites = [
+        {
+            "nom": "Le Mezenc",
+            "commune": "Boule-d'Amont",
+            "altitude": 1750,
+            "type": "Décollage principal",
+            "orientation": "O",
+            "description": "Site de grande envergure offrant des vues magnifiques et des conditions idéales pour les pilotes expérimentés."
+        },
+        {
+            "nom": "Le Mont Signon",
+            "commune": "Saint-Julien-Chapteuil",
+            "altitude": 1210,
+            "type": "Décollage principal",
+            "orientation": "SE",
+            "description": "Connu pour ses thermiques puissants, adapté à différents niveaux de pratique."
+        },
+        {
+            "nom": "La Jalette",
+            "commune": "Tence",
+            "altitude": 1030,
+            "type": "Décollage principal",
+            "orientation": "S",
+            "description": "Site accessible et agréable pour les pilotes débutants et intermédiaires, avec des paysages magnifiques."
+        },
+        {
+            "nom": "Le Mont d'Alambre",
+            "commune": "Les Estables",
+            "altitude": 1679,
+            "type": "Décollage principal",
+            "orientation": "SO",
+            "description": "Offre des conditions idéales pour les pilotes expérimentés, avec la possibilité de vols de distance."
+        },
+        {
+            "nom": "Chaudeyrolles",
+            "commune": "Chaudeyrolles",
+            "altitude": 1380,
+            "type": "Décollage principal",
+            "orientation": "NO",
+            "description": "Site avec des thermiques parfois violents et des turbulences par vent de NO. Site souvent très fréquenté, attention aux priorités en vol.",
+            "observations": "Ce site est FRAGILE. Il est impératif de respecter la convention signée avec le propriétaire sous peine de fermeture."
+        },
+        {
+            "nom": "Chaspinhac",
+            "commune": "Chaspinhac",
+            "altitude": 879,
+            "type": "Décollage principal",
+            "orientation": "NE",
+            "description": "Situé sur le rebord du plateau, ce site est adapté aux débutants et aux handicapés. Idéal par vent de Nord-Est et Est.",
+            "observations": "Le décollage est grand et l'atterrissage est très grand en bordure de la Couze Pavin. Ne pas voler par vent fort du Nord."
+        },
+        {
+            "nom": "La Chapelle du Brionnet",
+            "commune": "Saurier",
+            "altitude": 0,
+            "type": "Décollage principal",
+            "orientation": "NE",
+            "description": "Site technique avec un décollage petit. Déconseillé aux débutants. Le décollage N/NE se trouve en contrebas de la chapelle.",
+            "observations": "Ne pas voler par vent fort du Nord. Atterrissage très grand en bordure de la Couze Pavin."
+        },
+        {
+            "nom": "Le Crêt de la Perdrix",
+            "commune": "Saint-Geneys-près-Saint-Paulien",
+            "altitude": 1350,
+            "type": "Décollage principal",
+            "orientation": "SO",
+            "description": "Site prisé avec un bon potentiel de vol de distance."
+        },
+        {
+            "nom": "Le Puy-en-Velay",
+            "commune": "Le Puy-en-Velay",
+            "altitude": 770,
+            "type": "Décollage principal",
+            "orientation": "O",
+            "description": "Site urbain offrant une vue imprenable sur la ville et ses alentours, adapté aux pilotes débutants et intermédiaires."
+        },
+        {
+            "nom": "Le Col de la Croix de Boutières",
+            "commune": "Les Estables",
+            "altitude": 1430,
+            "type": "Décollage principal",
+            "orientation": "E",
+            "description": "Site de décollage pour la pratique du parapente, situé sur le plateau du Mézenc."
+        }
+    ];
+
+        async function loadCities() {
+            // Remplir le menu déroulant
+            const cityDropdown = document.getElementById('cityDropdown');
+            sites.forEach(site => {
+                const option = document.createElement('option');
+                option.value = site.nom;
+                option.textContent = site.nom;
+                cityDropdown.appendChild(option);
+            });
+        }
+        // Charger les villes au chargement de la page
+        document.addEventListener('DOMContentLoaded', loadCities);
+ 
         let windDirectionChart = null;
         let windGustsChart = null;
 
@@ -254,7 +356,7 @@
             resultsContainer.classList.add('mt-6', 'p-4', 'bg-blue-50', 'rounded-lg', 'shadow-md');
             
             const title = document.createElement('h4');
-            title.textContent = 'Périodes favorables: vent < 20 km/h, rafales < 30 km/h, direction entre NNO et E';
+            title.textContent = 'Périodes favorables: vent < 15 km/h, rafales < 25 km/h, direction entre NNO et E';
             title.classList.add('text-lg', 'font-semibold', 'mb-4');
             resultsContainer.appendChild(title);
 
@@ -274,7 +376,7 @@
                 const hour = rawDate.split(' ')[2].replace('h', '').trim();
 
                 // Check if wind speed is < 20, gusts < 30 and direction is between NNO and E
-                if (speed < 20 && gust < 30 && (direction >= 337.5 || direction <= 90) && hour >= 10 && hour <= 19) {
+                if (speed < 15 && gust < 25 && (direction >= 337.5 || direction <= 90) && hour >= 10 && hour <= 19) {
                     console.log(`Valid: ${hour} - ${speed} km/h - Rafales: ${gust} km/h - ${directionText}`);
                     const listItem = document.createElement('li');
                     listItem.textContent = `${dates[i]} - ${speed.toFixed(1)} km/h - Rafales: ${gust.toFixed(1)} km/h - ${directionText}`;
@@ -300,7 +402,8 @@
         }
 
         async function fetchWeather() {
-            const city = document.getElementById('cityInput').value;
+            const cityDropdown = document.getElementById('cityDropdown').value;
+            const city = cityDropdown; 
             const weatherInfo = document.getElementById('weatherInfo');
             const errorMessage = document.getElementById('errorMessage');
             
@@ -316,6 +419,13 @@
             }
 
             try {
+                // Charger les données du fichier JSON
+                const site = sites.find(site => site.nom === city);
+
+                if (!site) {
+                    throw new Error('Données du site introuvables');
+                }
+                
                 // First, get coordinates
                 const location = await getCoordinates(city);
 
@@ -327,6 +437,15 @@
 
                 // Update current weather UI
                 document.getElementById('cityName').textContent = location.name;
+                // Ajouter les informations supplémentaires
+                const additionalInfo = document.getElementById('additionalInfo');
+                additionalInfo.innerHTML = `
+                    <div class="bg-gray-100 p-4 rounded-lg text-left text-sm">
+                        ${site.description ? `<p><strong>Description :</strong> ${site.description}</p>` : ''}
+                        ${site.orientation ? `<p><strong>Orientation :</strong> ${site.orientation}</p>` : ''}
+                        ${site.observations ? `<p><strong>Observations :</strong> ${site.observations}</p>` : ''}
+                    </div>
+                `;
                 document.getElementById('temperature').textContent = `${Math.round(weatherData.current_weather.temperature)}°C`;
                 
                 const currentWindSpeed = weatherData.current_weather.windspeed;
