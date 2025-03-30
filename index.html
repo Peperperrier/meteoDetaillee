@@ -375,8 +375,9 @@
             list.classList.add('list-disc', 'pl-6');
 
             let perfectOrientation = 0;
+            const favorableDays = {}; // Stocker les périodes favorables par jour
 
-               // Convertir l'orientation du site en degrés
+            // Convertir l'orientation du site en degrés
             const orientationDegrees = Object.keys(WIND_DIRECTIONS).find(
                 key => WIND_DIRECTIONS[key] === siteOrientation
             );
@@ -413,6 +414,13 @@
                     const listItem = document.createElement('li');
                     listItem.textContent = `${dates[i]} - ${speed.toFixed(1)} km/h - Rafales: ${gust.toFixed(1)} km/h - ${directionText}`;
                     list.appendChild(listItem);
+                    
+                    // Extraire le jour de la date
+                    const day = dates[i].split(' ')[0] + ' ' + dates[i].split(' ')[1];
+                    if (!favorableDays[day]) {
+                        favorableDays[day] = 0;
+                    }
+                    favorableDays[day]++;
 
                     // Count occurrences of 'N'
                     if (directionText === siteOrientation) {
@@ -431,9 +439,22 @@
 
             // Append the results to the weather info section
             document.getElementById('weatherInfo').appendChild(resultsContainer);
-            // // Insérer les résultats juste après le conteneur "additionalInfo"
-            // const additionalInfo = document.getElementById('additionalInfo');
+            
+            const additionalInfo = document.getElementById('additionalInfo');
+            // Insérer les résultats juste après le conteneur "additionalInfo"
             // additionalInfo.parentNode.insertBefore(resultsContainer, additionalInfo.nextSibling);
+            
+            // Identifier les meilleurs jours
+            const bestDays = Object.keys(favorableDays).filter(day => favorableDays[day] >= 4);
+
+            // Ajouter les meilleurs jours dans "additionalInfo"
+            if (bestDays.length > 0) {
+                const bestDaysText = document.createElement('p');
+                bestDaysText.classList.add('mt-4', 'text-green-600', 'font-semibold');
+                bestDaysText.textContent = `Les meilleurs jours sont : ${bestDays.join(', ')} ⭐`;
+                additionalInfo.appendChild(bestDaysText);
+            }
+
         }
 
         async function fetchWeather() {
