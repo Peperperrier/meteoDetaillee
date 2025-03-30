@@ -2,7 +2,7 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Météo Détaillée</title>
+    <title>Météo 🪂 43</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
@@ -10,7 +10,7 @@
 <body class="bg-gradient-to-r from-blue-100 to-blue-300 min-h-screen flex flex-col items-center justify-center p-4">
     <div class="bg-white p-8 rounded-xl shadow-2xl w-full max-w-4xl">
         <div class="text-center mb-6">
-            <h1 class="text-3xl font-bold text-blue-600">Météo Détaillée</h1>
+            <h1 class="text-3xl font-bold text-blue-600">Météo Parapente Haute-Loire</h1>
             <div class="flex mt-4">
                 <select id="cityDropdown" 
                     class="flex-grow p-2 border rounded-l-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
@@ -66,89 +66,118 @@
 
     <script>
         const sites = [
+       {
+            "id": "370",
+            "nom": "CHASPINHAC (NE)",
+            "code": "370",
+            "commune": "CHASPINHAC",
+            "code_postal": "43700",
+            "activite": "parapente  [ déco ]",
+            "statut": "actif",
+            "latitude": 45.1033,
+            "longitude": 3.93,
+            "altitude": 931,
+            "secteurs_vent": "NE;ESecteurs de vent défavorables : Non renseignéConditions aérologiques idéales : bon site de restitution",
+            "orientation": "NE"
+		},
+		{
+            "id": "374",
+            "nom": "CHAUDEYROLLES (N)",
+            "code": "374",
+            "commune": "CHAUDEYROLLES",
+            "code_postal": "43430",
+            "activite": "parapente delta  [ déco ]",
+            "statut": "actif",
+            "latitude": 44.936,
+            "longitude": 4.1916,
+            "altitude": 1383,
+            "secteurs_vent": "NSecteurs de vent défavorables : E;SE;S;SO;O;NOConditions aérologiques idéales : Régime de Nord",
+            "orientation": "N"
+		},
+		{
+            "id": "5153",
+            "nom": "MONT-GERBIZON (E)",
+            "code": "5153",
+            "commune": "CHAMALIERES-SUR-LOIRE",
+            "code_postal": "43800",
+            "activite": "parapente  [ déco ]",
+            "statut": "actif",
+            "latitude": 45.1911,
+            "longitude": 3.9913,
+            "altitude": 978,
+            "secteurs_vent": "Non renseignéSecteurs de vent défavorables : Non renseignéConditions aérologiques idéales : Non renseigné",
+            "orientation": "N0"
+		},
+		{
+            "id": "372",
+            "nom": "LA DENISE (O)",
+            "code": "372",
+            "commune": "POLIGNAC",
+            "code_postal": "43000",
+            "activite": "parapente  [ déco ]",
+            "statut": "actif",
+            "latitude": 45.0581,
+            "longitude": 3.854,
+            "altitude": 883,
+            "secteurs_vent": "SO;OSecteurs de vent défavorables : S;NOConditions aérologiques idéales : Non renseigné",
+            "orientation": "O"
+		},
+		{
+            "id": "13590",
+            "nom": "MONT-GERBIZON (E)",
+            "code": "13590",
+            "commune": "RETOURNAC",
+            "code_postal": "43130",
+            "activite": "parapente  [ déco ]",
+            "statut": "actif",
+            "latitude": 45.1887,
+            "longitude": 4.0007,
+            "altitude": 1064,
+            "secteurs_vent": "NE;ESecteurs de vent défavorables : N;SE;S;SO;O;NOConditions aérologiques idéales : Vent de Nord/Est à Est et conditions thermiques",
+            "orientation": "NE"
+		},
+		{
+            "id": "3030",
+            "nom": "SAINTE ANNE (SO)",
+            "code": "3030",
+            "commune": "POLIGNAC",
+            "code_postal": "43770",
+            "activite": "parapente  [ déco ]",
+            "statut": "actif",
+            "latitude": 45.0707,
+            "longitude": 3.8433,
+            "altitude": 792,
+            "secteurs_vent": "Non renseignéSecteurs de vent défavorables : Non renseignéConditions aérologiques idéales : Non renseigné",
+            "orientation": "SO"
+		},
         {
-            "nom": "Le Mezenc",
-            "commune": "Boule-d'Amont",
-            "altitude": 1750,
-            "type": "Décollage principal",
-            "orientation": "O",
-            "description": "Site de grande envergure offrant des vues magnifiques et des conditions idéales pour les pilotes expérimentés."
+        "id": "5154",
+        "nom": "CONILS (O)",
+        "code": "5154",
+        "commune": "SAINT-DIDIER-D'ALLIER",
+        "code_postal": "43580",
+        "activite": "parapente  [ déco ]",
+        "statut": "actif",
+        "latitude": 44.9648,
+        "longitude": 3.7056,
+        "altitude": 1090,
+        "secteurs_vent": "Non renseignéSecteurs de vent défavorables : Non renseignéConditions aérologiques idéales : Non renseigné",
+        "orientation":"O"
         },
         {
-            "nom": "Le Mont Signon",
-            "commune": "Saint-Julien-Chapteuil",
-            "altitude": 1210,
-            "type": "Décollage principal",
-            "orientation": "SE",
-            "description": "Connu pour ses thermiques puissants, adapté à différents niveaux de pratique."
+        "id": "376",
+        "nom": "MONT ALAMBRE (S)",
+        "code": "376",
+        "commune": "LES ESTABLES",
+        "code_postal": "43150",
+        "activite": "parapente  [ déco ]",
+        "statut": "actif",
+        "latitude": 44.9139,
+        "longitude": 4.1542,
+        "altitude": 1583,
+        "secteurs_vent": "SSecteurs de vent défavorables : N;NE;E;O;NOConditions aérologiques idéales : Vent ou brise de Sud. S'il y a une petite tendance Sud Ouest, préférez monter au sommet et choisissez la pente herbeuse mieux orienté.",
+        "orientation": "S"
         },
-        {
-            "nom": "La Jalette",
-            "commune": "Tence",
-            "altitude": 1030,
-            "type": "Décollage principal",
-            "orientation": "S",
-            "description": "Site accessible et agréable pour les pilotes débutants et intermédiaires, avec des paysages magnifiques."
-        },
-        {
-            "nom": "Le Mont d'Alambre",
-            "commune": "Les Estables",
-            "altitude": 1679,
-            "type": "Décollage principal",
-            "orientation": "SO",
-            "description": "Offre des conditions idéales pour les pilotes expérimentés, avec la possibilité de vols de distance."
-        },
-        {
-            "nom": "Chaudeyrolles",
-            "commune": "Chaudeyrolles",
-            "altitude": 1380,
-            "type": "Décollage principal",
-            "orientation": "NO",
-            "description": "Site avec des thermiques parfois violents et des turbulences par vent de NO. Site souvent très fréquenté, attention aux priorités en vol.",
-            "observations": "Ce site est FRAGILE. Il est impératif de respecter la convention signée avec le propriétaire sous peine de fermeture."
-        },
-        {
-            "nom": "Chaspinhac",
-            "commune": "Chaspinhac",
-            "altitude": 879,
-            "type": "Décollage principal",
-            "orientation": "NE",
-            "description": "Situé sur le rebord du plateau, ce site est adapté aux débutants et aux handicapés. Idéal par vent de Nord-Est et Est.",
-            "observations": "Le décollage est grand et l'atterrissage est très grand en bordure de la Couze Pavin. Ne pas voler par vent fort du Nord."
-        },
-        {
-            "nom": "La Chapelle du Brionnet",
-            "commune": "Saurier",
-            "altitude": 0,
-            "type": "Décollage principal",
-            "orientation": "NE",
-            "description": "Site technique avec un décollage petit. Déconseillé aux débutants. Le décollage N/NE se trouve en contrebas de la chapelle.",
-            "observations": "Ne pas voler par vent fort du Nord. Atterrissage très grand en bordure de la Couze Pavin."
-        },
-        {
-            "nom": "Le Crêt de la Perdrix",
-            "commune": "Saint-Geneys-près-Saint-Paulien",
-            "altitude": 1350,
-            "type": "Décollage principal",
-            "orientation": "SO",
-            "description": "Site prisé avec un bon potentiel de vol de distance."
-        },
-        {
-            "nom": "Le Puy-en-Velay",
-            "commune": "Le Puy-en-Velay",
-            "altitude": 770,
-            "type": "Décollage principal",
-            "orientation": "O",
-            "description": "Site urbain offrant une vue imprenable sur la ville et ses alentours, adapté aux pilotes débutants et intermédiaires."
-        },
-        {
-            "nom": "Le Col de la Croix de Boutières",
-            "commune": "Les Estables",
-            "altitude": 1430,
-            "type": "Décollage principal",
-            "orientation": "E",
-            "description": "Site de décollage pour la pratique du parapente, situé sur le plateau du Mézenc."
-        }
     ];
 
         async function loadCities() {
@@ -186,25 +215,6 @@
                 157.5: 'SSE'
         };
 
-        const DATA = {
-            'S': 1,
-            'SSO': 2,
-            'SO': 3,
-            'OSO': 4,
-            'O': 5,
-            'ONO': 6,
-            'NO': 7,
-            'NNO': 8,
-            'N': 9,
-            'NNE': 10,
-            'NE': 11,
-            'ENE': 12,
-            'E': 13,
-            'ESE': 14,
-            'SE': 15,
-            'SSE': 16
-        };
-
         function getWindDirectionText(degrees) {
             // Find the closest direction
             const closestDegree = Object.keys(WIND_DIRECTIONS)
@@ -223,11 +233,8 @@
                 windDirectionChart.destroy();
             }
 
-            // Map wind directions to their corresponding values in DATA
-            const mappedWindDirections = windDirections.map(direction => DATA[getWindDirectionText(direction)]);
-
-            // Get the custom order for the Y-axis based on DATA keys
-            const customOrder = Object.keys(DATA);
+            // Convert degrees to direction text
+            const windDirectionTexts = windDirections.map(getWindDirectionText);
 
             windDirectionChart = new Chart(ctx, {
                 type: 'line',
@@ -235,7 +242,7 @@
                     labels: dates,
                     datasets: [{
                         label: 'Direction du Vent',
-                        data: mappedWindDirections,
+                        data: windDirections,
                         borderColor: 'green',
                         backgroundColor: 'rgba(0, 255, 0, 0.1)',
                     }]
@@ -250,20 +257,16 @@
                             },
                             ticks: {
                                 callback: function(value) {
-                                    // Reverse map the value to the corresponding wind direction
-                                    return customOrder[value - 1]; // Adjust index to match array position
+                                    return getWindDirectionText(value);
                                 }
-                            },
-                            min: 1, // Start from the first index
-                            max: customOrder.length // End at the last index
+                            }
                         }
                     },
                     plugins: {
                         tooltip: {
                             callbacks: {
                                 label: function(context) {
-                                    // Display the wind direction text in the tooltip
-                                    return customOrder[context.parsed.y - 1];
+                                    return getWindDirectionText(context.parsed.y);
                                 }
                             }
                         }
@@ -428,6 +431,9 @@
 
             // Append the results to the weather info section
             document.getElementById('weatherInfo').appendChild(resultsContainer);
+            // // Insérer les résultats juste après le conteneur "additionalInfo"
+            // const additionalInfo = document.getElementById('additionalInfo');
+            // additionalInfo.parentNode.insertBefore(resultsContainer, additionalInfo.nextSibling);
         }
 
         async function fetchWeather() {
@@ -456,16 +462,16 @@
                 }
                 
                 // First, get coordinates
-                const location = await getCoordinates(city);
+                // const location = await getCoordinates(city);
 
                 // Then fetch weather data with wind gusts
                 const weatherResponse = await fetch(
-                    `https://api.open-meteo.com/v1/forecast?latitude=${location.latitude}&longitude=${location.longitude}&hourly=windspeed_10m,winddirection_10m,windgusts_10m&current_weather=true&windspeed_unit=kmh&timezone=auto&forecast_days=10`
+                    `https://api.open-meteo.com/v1/forecast?latitude=${site.latitude}&longitude=${site.longitude}&hourly=windspeed_10m,winddirection_10m,windgusts_10m&current_weather=true&windspeed_unit=kmh&timezone=auto&forecast_days=10`
                 );
                 const weatherData = await weatherResponse.json();
 
                 // Update current weather UI
-                document.getElementById('cityName').textContent = location.name;
+                document.getElementById('cityName').textContent = site.commune;
                 // Ajouter les informations supplémentaires
                 const additionalInfo = document.getElementById('additionalInfo');
                 additionalInfo.innerHTML = `
