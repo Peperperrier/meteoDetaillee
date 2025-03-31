@@ -2,22 +2,23 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Météo 🪂 43</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
-<body class="bg-gradient-to-r from-blue-100 to-blue-300 min-h-screen flex flex-col items-center justify-center p-4">
-    <div class="bg-white p-8 rounded-xl shadow-2xl w-full max-w-4xl">
-        <div class="text-center mb-6">
-            <h1 class="text-3xl font-bold text-blue-600">Météo Parapente Haute-Loire</h1>
-            <div class="flex mt-4">
+<body class="bg-gradient-to-r from-blue-100 to-blue-300 min-h-screen flex flex-col items-center justify-center p-2 md:p-4">
+    <div class="bg-white p-4 md:p-8 rounded-xl shadow-2xl w-full max-w-4xl">
+        <div class="text-center mb-4 md:mb-6">
+            <h1 class="text-xl md:text-3xl font-bold text-blue-600">Météo Parapente Haute-Loire</h1>
+            <div class="flex flex-col sm:flex-row mt-4 gap-2 sm:gap-0">
                 <select id="cityDropdown" 
-                    class="flex-grow p-2 border rounded-l-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    class="w-full sm:flex-grow p-2 border rounded-lg sm:rounded-r-none focus:outline-none focus:ring-2 focus:ring-blue-500">
                     <option value="">Sélectionnez une ville</option>
                 </select>
                 <button onclick="fetchWeather()" 
-                    class="bg-blue-500 text-white p-2 rounded-r-lg hover:bg-blue-600 transition">
+                    class="w-full sm:w-auto bg-blue-500 text-white p-2 rounded-lg sm:rounded-l-none hover:bg-blue-600 transition">
                     Rechercher
                 </button>
             </div>
@@ -25,39 +26,45 @@
 
         <div id="weatherInfo" class="hidden">
             <div class="text-center">
-                <h2 id="cityName" class="text-2xl font-semibold"></h2>
-                <div id="additionalInfo" class="text-lg text-gray-700 mt-2"></div> <!-- Conteneur pour les infos supplémentaires -->
-                <div id="temperature" class="text-5xl font-bold text-blue-700 my-4"></div>
+                <h2 id="cityName" class="text-xl md:text-2xl font-semibold"></h2>
+                <div id="additionalInfo" class="text-sm md:text-lg text-gray-700 mt-2"></div>
+                <div id="temperature" class="text-4xl md:text-5xl font-bold text-blue-700 my-3 md:my-4"></div>
                 
-                <div class="grid grid-cols-3 gap-4 mt-6">
-                    <div class="bg-blue-50 p-4 rounded-lg">
-                        <i class="fas fa-wind text-blue-500 text-2xl mb-2"></i>
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 md:gap-4 mt-4 md:mt-6">
+                    <div class="bg-blue-50 p-3 md:p-4 rounded-lg">
+                        <i class="fas fa-wind text-blue-500 text-xl md:text-2xl mb-1 md:mb-2"></i>
                         <div>
                             <strong>Vitesse du Vent</strong>
-                            <div id="windSpeed" class="text-xl font-bold"></div>
+                            <div id="windSpeed" class="text-lg md:text-xl font-bold"></div>
                         </div>
                     </div>
-                    <div class="bg-blue-50 p-4 rounded-lg">
-                        <i class="fas fa-compass text-blue-500 text-2xl mb-2"></i>
+                    <div class="bg-blue-50 p-3 md:p-4 rounded-lg">
+                        <i class="fas fa-compass text-blue-500 text-xl md:text-2xl mb-1 md:mb-2"></i>
                         <div>
                             <strong>Direction du Vent</strong>
-                            <div id="windDirection" class="text-xl font-bold"></div>
+                            <div id="windDirection" class="text-lg md:text-xl font-bold"></div>
                         </div>
                     </div>
-                    <div class="bg-blue-50 p-4 rounded-lg">
-                        <i class="fas fa-bolt text-yellow-500 text-2xl mb-2"></i>
+                    <div class="bg-blue-50 p-3 md:p-4 rounded-lg">
+                        <i class="fas fa-bolt text-yellow-500 text-xl md:text-2xl mb-1 md:mb-2"></i>
                         <div>
                             <strong>Rafales de Vent</strong>
-                            <div id="windGusts" class="text-xl font-bold"></div>
+                            <div id="windGusts" class="text-lg md:text-xl font-bold"></div>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div class="mt-8">
-                <h3 class="text-xl font-semibold text-center mb-4">Prévisions de Vent pour 10 Jours</h3>
-                <canvas id="windGustsChart" class="w-full h-64"></canvas>
-                <canvas id="windDirectionChart" class="w-full h-64 mt-4"></canvas>
+            <div class="mt-6 md:mt-8">
+                <h3 class="text-lg md:text-xl font-semibold text-center mb-3 md:mb-4">Prévisions de Vent pour 10 Jours</h3>
+                <div class="overflow-x-auto">
+                    <div class="min-w-full md:w-full" style="min-height: 250px;">
+                        <canvas id="windGustsChart"></canvas>
+                    </div>
+                    <div class="min-w-full md:w-full mt-4" style="min-height: 250px;">
+                        <canvas id="windDirectionChart"></canvas>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -249,6 +256,7 @@
                 },
                 options: {
                     responsive: true,
+                    maintainAspectRatio: false,
                     scales: {
                         y: {
                             title: {
@@ -260,6 +268,14 @@
                                     return getWindDirectionText(value);
                                 }
                             }
+                        },
+                        x: {
+                            ticks: {
+                                maxRotation: 45,
+                                minRotation: 45,
+                                autoSkip: true,
+                                maxTicksLimit: 20
+                            }
                         }
                     },
                     plugins: {
@@ -269,6 +285,10 @@
                                     return getWindDirectionText(context.parsed.y);
                                 }
                             }
+                        },
+                        legend: {
+                            display: true,
+                            position: 'top'
                         }
                     }
                 }
@@ -309,6 +329,7 @@
                 },
                 options: {
                     responsive: true,
+                    maintainAspectRatio: false,
                     plugins: {
                         legend: {
                             position: 'top',
@@ -323,6 +344,14 @@
                             title: {
                                 display: true,
                                 text: 'Vitesse (km/h)'
+                            }
+                        },
+                        x: {
+                            ticks: {
+                                maxRotation: 45,
+                                minRotation: 45,
+                                autoSkip: true,
+                                maxTicksLimit: 20
                             }
                         }
                     },
@@ -364,15 +393,15 @@
             // Créer un nouveau conteneur pour les résultats
             const resultsContainer = document.createElement('div');
             resultsContainer.id = 'lowWindPeriods'; // Ajoutez un ID unique pour identifier ce conteneur
-            resultsContainer.classList.add('mt-6', 'p-4', 'bg-blue-50', 'rounded-lg', 'shadow-md');
+            resultsContainer.classList.add('mt-4', 'md:mt-6', 'p-3', 'md:p-4', 'bg-blue-50', 'rounded-lg', 'shadow-md', 'text-sm', 'md:text-base');
     
             const title = document.createElement('h4');
             title.textContent = `Périodes favorables: vent < 15 km/h, rafales < 25 km/h, direction proche de ${siteOrientation}`;
-            title.classList.add('text-lg', 'font-semibold', 'mb-4');
+            title.classList.add('text-base', 'md:text-lg', 'font-semibold', 'mb-2', 'md:mb-4');
             resultsContainer.appendChild(title);
 
             const list = document.createElement('ul');
-            list.classList.add('list-disc', 'pl-6');
+            list.classList.add('list-disc', 'pl-4', 'md:pl-6', 'max-h-40', 'md:max-h-60', 'overflow-y-auto');
 
             let perfectOrientation = 0;
             const favorableDays = {}; // Stocker les périodes favorables par jour
@@ -434,7 +463,7 @@
             // Add the count of 'N' occurrences
             const perfectOrientationText = document.createElement('p');
             perfectOrientationText.textContent = `Top : Le vent vient de ${siteOrientation} : ${perfectOrientation} fois.`;
-            perfectOrientationText.classList.add('mt-4', 'font-bold');
+            perfectOrientationText.classList.add('mt-3', 'md:mt-4', 'font-bold');
             resultsContainer.appendChild(perfectOrientationText);
 
             // Append the results to the weather info section
@@ -450,7 +479,7 @@
             // Ajouter les meilleurs jours dans "additionalInfo"
             if (bestDays.length > 0) {
                 const bestDaysText = document.createElement('p');
-                bestDaysText.classList.add('mt-4', 'text-green-600', 'font-semibold');
+                bestDaysText.classList.add('mt-3', 'md:mt-4', 'text-green-600', 'font-semibold', 'text-sm', 'md:text-base');
                 bestDaysText.textContent = `Les meilleurs jours sont : ${bestDays.join(', ')} ⭐`;
                 additionalInfo.appendChild(bestDaysText);
             }
@@ -482,9 +511,6 @@
                     throw new Error('Données du site introuvables');
                 }
                 
-                // First, get coordinates
-                // const location = await getCoordinates(city);
-
                 // Then fetch weather data with wind gusts
                 const weatherResponse = await fetch(
                     `https://api.open-meteo.com/v1/forecast?latitude=${site.latitude}&longitude=${site.longitude}&hourly=windspeed_10m,winddirection_10m,windgusts_10m&current_weather=true&windspeed_unit=kmh&timezone=auto&forecast_days=10`
@@ -496,7 +522,7 @@
                 // Ajouter les informations supplémentaires
                 const additionalInfo = document.getElementById('additionalInfo');
                 additionalInfo.innerHTML = `
-                    <div class="bg-gray-100 p-4 rounded-lg text-left text-sm">
+                    <div class="bg-gray-100 p-2 md:p-4 rounded-lg text-left text-xs md:text-sm">
                         ${site.description ? `<p><strong>Description :</strong> ${site.description}</p>` : ''}
                         ${site.orientation ? `<p><strong>Orientation :</strong> ${site.orientation}</p>` : ''}
                         ${site.observations ? `<p><strong>Observations :</strong> ${site.observations}</p>` : ''}
@@ -568,6 +594,16 @@
                 throw new Error('Impossible de trouver les coordonnées de la ville');
             }
         }
+
+        // Ajouter une gestion de redimensionnement pour les graphiques
+        window.addEventListener('resize', function() {
+            if (windGustsChart) {
+                windGustsChart.resize();
+            }
+            if (windDirectionChart) {
+                windDirectionChart.resize();
+            }
+        });
     </script>
 </body>
 </html>
