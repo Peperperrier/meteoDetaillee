@@ -131,7 +131,7 @@
 		},
 		{
             "id": "13590",
-            "nom": "MONT-GERBIZON (E)",
+            "nom": "MONT-GERBIZON (NE)",
             "code": "13590",
             "commune": "RETOURNAC",
             "code_postal": "43130",
@@ -192,7 +192,7 @@
             const cityDropdown = document.getElementById('cityDropdown');
             sites.forEach(site => {
                 const option = document.createElement('option');
-                option.value = site.commune;
+                option.value = site.nom;
                 option.textContent = site.nom;
                 cityDropdown.appendChild(option);
             });
@@ -488,6 +488,7 @@
 
         async function fetchWeather() {
             const cityDropdown = document.getElementById('cityDropdown').value;
+            console.log(cityDropdown.textContent);
             const city = cityDropdown; 
             const weatherInfo = document.getElementById('weatherInfo');
             const errorMessage = document.getElementById('errorMessage');
@@ -505,7 +506,7 @@
 
             try {
                 // Charger les données du fichier JSON
-                const site = sites.find(site => site.commune === city);
+                const site = sites.find(site => site.nom === city);
 
                 if (!site) {
                     throw new Error('Données du site introuvables');
@@ -526,8 +527,10 @@
                         ${site.description ? `<p><strong>Description :</strong> ${site.description}</p>` : ''}
                         ${site.orientation ? `<p><strong>Orientation :</strong> ${site.orientation}</p>` : ''}
                         ${site.observations ? `<p><strong>Observations :</strong> ${site.observations}</p>` : ''}
+                        <p><strong>Voir plus :</strong> <a href="https://meteo-parapente.com/#/${site.latitude},${site.longitude},12" target="_blank" class="text-blue-500 underline">Météo détaillée par meteo-parapente</a></p>
                     </div>
                 `;
+
                 document.getElementById('temperature').textContent = `${Math.round(weatherData.current_weather.temperature)}°C`;
                 
                 const currentWindSpeed = weatherData.current_weather.windspeed;
