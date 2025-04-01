@@ -264,6 +264,9 @@
                                 text: 'Direction du Vent'
                             },
                             ticks: {
+                                stepSize: 45,
+                                suggestedMin: 0,
+                                suggestedMax: 360,
                                 callback: function(value) {
                                     return getWindDirectionText(value);
                                 }
