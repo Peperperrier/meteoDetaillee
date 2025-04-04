@@ -441,7 +441,7 @@
                 document.getElementById('geoMessage').textContent = "😲 Oups, une erreur est survenue";
             }
         }
-        
+
         // Charger les villes au chargement de la page
         document.addEventListener('DOMContentLoaded', () => {
             loadCities();
@@ -749,16 +749,17 @@
 
         async function fetchWeather() {
             const cityDropdown = document.getElementById('cityDropdown').value;
-            console.log(cityDropdown.textContent);
-            const city = cityDropdown;
             const weatherInfo = document.getElementById('weatherInfo');
             const errorMessage = document.getElementById('errorMessage');
+            const geoMessage = document.getElementById('geoMessage');
 
             // Reset previous state
             weatherInfo.classList.add('hidden');
             errorMessage.classList.add('hidden');
+            geoMessage.classList.add('hidden');
             errorMessage.textContent = '';
 
+            const city = cityDropdown;
             if (!city) {
                 errorMessage.textContent = 'Veuillez entrer un nom de ville';
                 errorMessage.classList.remove('hidden');
