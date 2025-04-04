@@ -282,10 +282,14 @@
         }
 
         async function displayBestSite() {
+            const bestSiteInfo = document.getElementById('bestSiteInfo');
+
+            // Afficher l'emoji de réflexion pendant le chargement
+            bestSiteInfo.innerHTML = "🤔 Recherche du meilleur site en cours...";
+            bestSiteInfo.style.cursor = 'default'; // Désactiver le curseur cliquable pendant le chargement
+
             const results = await fetchWeatherForAllSites();
             const bestSite = findBestSite(results);
-
-            const bestSiteInfo = document.getElementById('bestSiteInfo');
 
             if (bestSite) {
                 bestSiteInfo.innerHTML = `💡 Le meilleur site pour les 2 prochains jours est : <strong>${bestSite.site}</strong> (${bestSite.commune}) avec <strong>${bestSite.favorablePeriods}</strong> périodes favorables.`;
