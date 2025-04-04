@@ -33,8 +33,10 @@
             <div class="text-center">
                 <h2 id="cityName" class="text-xl md:text-2xl font-semibold"></h2>
                 <div id="additionalInfo" class="text-sm md:text-lg text-gray-700 mt-2"></div>
-                <div id="temperature" class="text-4xl md:text-5xl font-bold text-blue-700 my-3 md:my-4"></div>
-
+                <div class="flex items-center justify-center gap-2 my-3 md:my-4">
+                    <div id="temperature" class="text-4xl md:text-5xl font-bold text-blue-700"></div>
+                    <div id="weatherIcon" class="text-4xl md:text-5xl"></div>
+                </div>
                 <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 md:gap-4 mt-4 md:mt-6">
                     <div class="bg-blue-50 p-3 md:p-4 rounded-lg">
                         <i class="fas fa-wind text-blue-500 text-xl md:text-2xl mb-1 md:mb-2"></i>
@@ -644,7 +646,7 @@
                     throw new Error('Données du site introuvables');
                 }
 
-                // Then fetch weather data with wind gusts
+                // Fetch weather data
                 const weatherResponse = await fetch(
                     `https://api.open-meteo.com/v1/forecast?latitude=${site.latitude}&longitude=${site.longitude}&hourly=windspeed_10m,winddirection_10m,windgusts_10m&current_weather=true&windspeed_unit=kmh&timezone=auto&forecast_days=10`
                 );
@@ -652,22 +654,47 @@
 
                 // Update current weather UI
                 document.getElementById('cityName').textContent = site.commune;
+
                 // Ajouter les informations supplémentaires
                 const additionalInfo = document.getElementById('additionalInfo');
                 additionalInfo.innerHTML = `
-                    <div class="bg-gray-100 p-2 md:p-4 rounded-lg text-left text-xs md:text-sm">
-                        ${site.description ? `<p><strong>Description :</strong> ${site.description}</p>` : ''}
-                        ${site.orientation ? `<p><strong>Orientation :</strong> ${site.orientation}</p>` : ''}
-                        ${site.observations ? `<p><strong>Observations :</strong> ${site.observations}</p>` : ''}
-                        <p><strong>Voir plus :</strong> <a href="https://meteo-parapente.com/#/${site.latitude},${site.longitude},12" target="_blank" class="text-blue-500 underline">Météo détaillée par meteo-parapente</a></p>
-                        ${site.balise ? `<p><strong>Balises disponibles :</strong></p>
-                        <ul>
-                            ${Array.isArray(site.balise) ? site.balise.map(b => `<li><a href="${Object.values(b)[0]}" target="_blank" class="text-blue-500 underline">${Object.values(b)[0]}</a></li>`).join('') : `<li><a href="${site.balise}" target="_blank" class="text-blue-500 underline">${site.balise}</a></li>`}
-                        </ul>` : ''}
-                    </div>
-                `;
+        <div class="bg-gray-100 p-2 md:p-4 rounded-lg text-left text-xs md:text-sm">
+            ${site.description ? `<p><strong>Description :</strong> ${site.description}</p>` : ''}
+            ${site.orientation ? `<p><strong>Orientation :</strong> ${site.orientation}</p>` : ''}
+            ${site.observations ? `<p><strong>Observations :</strong> ${site.observations}</p>` : ''}
+            <p><strong>Voir plus :</strong> <a href="https://meteo-parapente.com/#/${site.latitude},${site.longitude},12" target="_blank" class="text-blue-500 underline">Météo détaillée par meteo-parapente</a></p>
+        </div>
+    `;
 
                 document.getElementById('temperature').textContent = `${Math.round(weatherData.current_weather.temperature)}°C`;
+
+                // Ajouter une icône météo
+                const weatherIcon = document.getElementById('weatherIcon');
+                const weatherCode = weatherData.current_weather.weathercode;
+
+                // Déterminer l'icône en fonction du code météo
+                const weatherIcons = {
+                    0: '☀️', // Ensoleillé
+                    1: '🌤️', // Principalement ensoleillé
+                    2: '⛅', // Partiellement nuageux
+                    3: '☁️', // Nuageux
+                    45: '🌫️', // Brouillard
+                    48: '🌫️', // Brouillard givrant
+                    51: '🌦️', // Bruine légère
+                    53: '🌧️', // Bruine modérée
+                    55: '🌧️', // Bruine dense
+                    61: '🌦️', // Pluie légère
+                    63: '🌧️', // Pluie modérée
+                    65: '🌧️', // Pluie forte
+                    71: '❄️', // Neige légère
+                    73: '❄️', // Neige modérée
+                    75: '❄️', // Neige forte
+                    95: '⛈️', // Orage
+                    96: '⛈️', // Orage avec grêle légère
+                    99: '⛈️'  // Orage avec grêle forte
+                };
+
+                weatherIcon.textContent = weatherIcons[weatherCode] || '❓'; // Afficher une icône par défaut si le code n'est pas trouvé
 
                 const currentWindSpeed = weatherData.current_weather.windspeed;
                 const currentWindDirection = weatherData.current_weather.winddirection;
