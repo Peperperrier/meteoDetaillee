@@ -81,8 +81,6 @@ def extract_data_from_site(site_id):
         
         # Recherche des secteurs de vent favorables
         wind_sectors = None
-        
-        # Tentative 1: recherche d'un élément avec un texte contenant "Secteurs de vent"
         for element in soup.find_all(['div', 'p', 'span']):
             text = element.get_text()
             if 'Secteurs de vent favorables' in text:
@@ -94,12 +92,26 @@ def extract_data_from_site(site_id):
         if wind_sectors:
             details['secteurs_vent'] = wind_sectors
         
+        # Recherche des balises météo
+        balises = []
+        description_div = soup.find('div', id='edit-terrain-description-publique')
+        if description_div:
+            # Rechercher les balises météo dans le contenu de <pre>
+            pre_element = description_div.find('pre')
+            if pre_element:
+                print(f"Balises météo trouvées dans le site {site_id}:")
+                for link in pre_element.find_all('a', href=True):
+                    if 'Balise météo' in pre_element.get_text():
+                        balises.append(link['href'])  # Ajouter l'URL de la balise météo
+
+        if balises:
+            details['balise'] = balises
+        
         return details
         
     except Exception as e:
         print(f"Erreur lors de la récupération des détails pour le site {site_id}: {e}")
         return None
-
 def main():
     # Charger le fichier JSON existant
     try:

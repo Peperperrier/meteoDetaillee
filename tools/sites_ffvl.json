@@ -1,0 +1,578 @@
+[
+    {
+        "id": "1507",
+        "nom": "COL DE LA CROIX SAINT-ROBERT",
+        "code": "1507",
+        "commune": "MONT DORE",
+        "code_postal": "63240",
+        "activite": "parapente  [ atterro ]",
+        "statut": "actif"
+    },
+    {
+        "id": "1511",
+        "nom": "COL DE LA CROIX-MORAND",
+        "code": "1511",
+        "commune": "CHAMBON SUR LAC",
+        "code_postal": "63790",
+        "activite": "parapente  [ atterro ]",
+        "statut": "actif"
+    },
+    {
+        "id": "14199",
+        "nom": "COL DES SUPEYRES",
+        "code": "14199",
+        "commune": "VALCIVIERES",
+        "code_postal": "63600",
+        "activite": "snowkite",
+        "statut": "actif"
+    },
+    {
+        "id": "14158",
+        "nom": "COTE JOLIE",
+        "code": "14158",
+        "commune": "LES MARTRES DE VEYRE",
+        "code_postal": "63730",
+        "activite": "parapente delta  [ pente école ]",
+        "statut": "actif"
+    },
+    {
+        "id": "14089",
+        "nom": "DOME DES ALLEBASSES",
+        "code": "14089",
+        "commune": "VALCIVIERES",
+        "code_postal": "63600",
+        "activite": "kite terre",
+        "statut": "actif"
+    },
+    {
+        "id": "734",
+        "nom": "JOB",
+        "code": "734",
+        "commune": "JOB",
+        "code_postal": "63990",
+        "activite": "parapente delta  [ atterro ]",
+        "statut": "actif"
+    },
+    {
+        "id": "736",
+        "nom": "JOB-AMBERT - LA FORIE",
+        "code": "736",
+        "commune": "LA FORIE",
+        "code_postal": "63600",
+        "activite": "parapente delta  [ atterro ]",
+        "statut": "actif"
+    },
+    {
+        "id": "732",
+        "nom": "JOB-AMBERT - LE BIEN",
+        "code": "732",
+        "commune": "JOB",
+        "code_postal": "63990",
+        "activite": "parapente delta  [ déco ]",
+        "statut": "actif"
+    },
+    {
+        "id": "726",
+        "nom": "JOB-AMBERT - LE CORNILLON",
+        "code": "726",
+        "commune": "JOB",
+        "code_postal": "63990",
+        "activite": "parapente delta  [ déco ]",
+        "statut": "actif"
+    },
+    {
+        "id": "724",
+        "nom": "JOB-AMBERT - LE MONT CHOUVE",
+        "code": "724",
+        "commune": "JOB",
+        "code_postal": "63990",
+        "activite": "parapente delta  [ déco ]",
+        "statut": "actif"
+    },
+    {
+        "id": "1506",
+        "nom": "LA FERME DE L 'ANGLE",
+        "code": "1506",
+        "commune": "LE MONT DORE",
+        "code_postal": "63240",
+        "activite": "parapente  [ atterro ]",
+        "statut": "actif"
+    },
+    {
+        "id": "1513",
+        "nom": "LA MONTAGNE DE LA PLATE",
+        "code": "1513",
+        "commune": "CHAMBON SUR LAC",
+        "code_postal": "63790",
+        "activite": "parapente  [ déco ]",
+        "statut": "interdit"
+    },
+    {
+        "id": "1504",
+        "nom": "LE MAREUILH",
+        "code": "1504",
+        "commune": "MONT DORE",
+        "code_postal": "63240",
+        "activite": "parapente  [ déco ]",
+        "statut": "actif"
+    },
+    {
+        "id": "1667",
+        "nom": "LE MONT DORE",
+        "code": "1667",
+        "commune": "LE MONT DORE",
+        "code_postal": "63240",
+        "activite": "speedriding  [ ]",
+        "statut": "actif"
+    },
+    {
+        "id": "1494",
+        "nom": "LE MONT DORE - LES EGGRAVATS",
+        "code": "1494",
+        "commune": "LE MONT DORE",
+        "code_postal": "63240",
+        "activite": "parapente  [ déco ]",
+        "statut": "actif"
+    },
+    {
+        "id": "1495",
+        "nom": "LE MONT DORE - PUY DE CACADOGNE",
+        "code": "1495",
+        "commune": "LE MONT DORE",
+        "code_postal": "63240",
+        "activite": "parapente  [ déco ]",
+        "statut": "actif"
+    },
+    {
+        "id": "1491",
+        "nom": "LE MONT DORE - PUY DE CLIERGUE",
+        "code": "1491",
+        "commune": "LE MONT DORE",
+        "code_postal": "63240",
+        "activite": "parapente  [ déco ]",
+        "statut": "actif"
+    },
+    {
+        "id": "452",
+        "nom": "LE MONT DORE - PUY DE SANCY",
+        "code": "452",
+        "commune": "LE MONT DORE",
+        "code_postal": "63240",
+        "activite": "parapente  [ déco ]",
+        "statut": "actif"
+    },
+    {
+        "id": "1493",
+        "nom": "LE MONT DORE - ROC DE CUZEAU",
+        "code": "1493",
+        "commune": "CHAMBON SUR LAC",
+        "code_postal": "63790",
+        "activite": "parapente  [ déco ]",
+        "statut": "actif"
+    },
+    {
+        "id": "1489",
+        "nom": "LE MONT DORE - TELEPHERIQUE",
+        "code": "1489",
+        "commune": "LE MONT DORE",
+        "code_postal": "63240",
+        "activite": "parapente  [ déco ]",
+        "statut": "actif"
+    },
+    {
+        "id": "471",
+        "nom": "LE PUY DE DOME",
+        "code": "471",
+        "commune": "ORCINES",
+        "code_postal": "63870",
+        "activite": "parapente delta  [ déco ]",
+        "statut": "actif"
+    },
+    {
+        "id": "473",
+        "nom": "LE PUY DE DOME - CEYSSAT",
+        "code": "473",
+        "commune": "CEYSSAT",
+        "code_postal": "63210",
+        "activite": "parapente  [ atterro ]",
+        "statut": "actif"
+    },
+    {
+        "id": "445",
+        "nom": "LE PUY DE DOME - LA TAILLERIE",
+        "code": "445",
+        "commune": "ORCINES",
+        "code_postal": "63870",
+        "activite": "parapente  [ atterro ]",
+        "statut": "actif"
+    },
+    {
+        "id": "472",
+        "nom": "LE PUY DE DOME - LASCHAMPS",
+        "code": "472",
+        "commune": "ST-GENES CHAMPANELLE",
+        "code_postal": "63122",
+        "activite": "parapente delta  [ atterro ]",
+        "statut": "actif"
+    },
+    {
+        "id": "1490",
+        "nom": "LE PUY GROS",
+        "code": "1490",
+        "commune": "LE MONT DORE",
+        "code_postal": "63240",
+        "activite": "parapente  [ déco ]",
+        "statut": "actif"
+    },
+    {
+        "id": "1502",
+        "nom": "LE PUY GROS - LES PLANCHES",
+        "code": "1502",
+        "commune": "LA BOURBOULE",
+        "code_postal": "63150",
+        "activite": "parapente  [ atterro ]",
+        "statut": "actif"
+    },
+    {
+        "id": "13097",
+        "nom": "LE PUY GROS - USINE D 'EAU",
+        "code": "13097",
+        "commune": "LE MONT DORE",
+        "code_postal": "63240",
+        "activite": "parapente  [ atterro ]",
+        "statut": "actif"
+    },
+    {
+        "id": "1666",
+        "nom": "LE-MONT-DORE - LES-COULEES",
+        "code": "1666",
+        "commune": "LE MONT DORE",
+        "code_postal": "63240",
+        "activite": "speedriding  [ déco ]",
+        "statut": "actif"
+    },
+    {
+        "id": "598",
+        "nom": "MONNEAUX",
+        "code": "598",
+        "commune": "CHAMBON SUR LAC",
+        "code_postal": "63790",
+        "activite": "parapente  [ atterro ]",
+        "statut": "actif"
+    },
+    {
+        "id": "13398",
+        "nom": "NAVOIRAT",
+        "code": "13398",
+        "commune": "MENAT",
+        "code_postal": "63560",
+        "activite": "parapente  [ déco ]",
+        "statut": "actif"
+    },
+    {
+        "id": "13409",
+        "nom": "NAVOIRAT - BIESSE",
+        "code": "13409",
+        "commune": "MENAT",
+        "code_postal": "63560",
+        "activite": "parapente  [ atterro ]",
+        "statut": "actif"
+    },
+    {
+        "id": "1505",
+        "nom": "OFFICIEL DU MONT-DORE",
+        "code": "1505",
+        "commune": "MONT DORE",
+        "code_postal": "63240",
+        "activite": "parapente  [ atterro ]",
+        "statut": "actif"
+    },
+    {
+        "id": "13159",
+        "nom": "PIC D 'YSSON",
+        "code": "13159",
+        "commune": "VODABLE",
+        "code_postal": "63500",
+        "activite": "parapente delta  [ déco ]",
+        "statut": "actif"
+    },
+    {
+        "id": "13160",
+        "nom": "PIC D 'YSSON",
+        "code": "13160",
+        "commune": "VODABLE",
+        "code_postal": "63500",
+        "activite": "parapente  [ atterro ]",
+        "statut": "actif"
+    },
+    {
+        "id": "436",
+        "nom": "PIC SAINT-PIERRE",
+        "code": "436",
+        "commune": "ST-PIERRE-COLAMINE",
+        "code_postal": "63610",
+        "activite": "parapente  [ déco ]",
+        "statut": "actif"
+    },
+    {
+        "id": "437",
+        "nom": "PIC SAINT-PIERRE - VERNEUGE",
+        "code": "437",
+        "commune": "ST DIERY",
+        "code_postal": "63320",
+        "activite": "parapente  [ atterro ]",
+        "statut": "actif"
+    },
+    {
+        "id": "591",
+        "nom": "PUY DE CORENT",
+        "code": "591",
+        "commune": "VEYRE-MONTON",
+        "code_postal": "63960",
+        "activite": "parapente delta  [ déco ]",
+        "statut": "actif"
+    },
+    {
+        "id": "1503",
+        "nom": "PUY DE L 'ANGLE",
+        "code": "1503",
+        "commune": "MONT DORE",
+        "code_postal": "63240",
+        "activite": "parapente  [ déco ]",
+        "statut": "actif"
+    },
+    {
+        "id": "1508",
+        "nom": "PUY DE L 'OUIRE",
+        "code": "1508",
+        "commune": "ORCIVAL",
+        "code_postal": "63210",
+        "activite": "parapente  [ déco ]",
+        "statut": "actif"
+    },
+    {
+        "id": "1509",
+        "nom": "PUY DE L 'OUIRE - LE CROS BAS",
+        "code": "1509",
+        "commune": "ROCHEFORT-MONTAGNE",
+        "code_postal": "63210",
+        "activite": "parapente  [ atterro ]",
+        "statut": "actif"
+    },
+    {
+        "id": "1510",
+        "nom": "PUY DE LA TACHE",
+        "code": "1510",
+        "commune": "CHAMBON SUR LAC",
+        "code_postal": "63790",
+        "activite": "parapente  [ déco ]",
+        "statut": "actif"
+    },
+    {
+        "id": "441",
+        "nom": "PUY DE SAINT-SANDOUX",
+        "code": "441",
+        "commune": "ST SANDOUX",
+        "code_postal": "63450",
+        "activite": "parapente delta  [ déco ]",
+        "statut": "actif"
+    },
+    {
+        "id": "443",
+        "nom": "PUY SAINT-ROMAIN",
+        "code": "443",
+        "commune": "ST-MAURICE ES ALLIER",
+        "code_postal": "63270",
+        "activite": "parapente delta  [ déco ]",
+        "statut": "actif"
+    },
+    {
+        "id": "13200",
+        "nom": "PUY SAINT-ROMAIN - LES-MARTRES DE VEYRE",
+        "code": "13200",
+        "commune": "LES MARTRES DE VEYRE",
+        "code_postal": "63730",
+        "activite": "parapente delta  [ atterro pente école ]",
+        "statut": "actif"
+    },
+    {
+        "id": "444",
+        "nom": "PUY SAINT-ROMAIN - MIREFLEURS",
+        "code": "444",
+        "commune": "MIREFLEURS",
+        "code_postal": "63730",
+        "activite": "parapente delta cerf-volant  [ atterro pente école ]",
+        "statut": "actif"
+    },
+    {
+        "id": "13208",
+        "nom": "PUY SAINT-ROMAIN - STE-MARGUERITE",
+        "code": "13208",
+        "commune": "ST-MAURICE ES ALLIER",
+        "code_postal": "63270",
+        "activite": "parapente  [ atterro ]",
+        "statut": "actif"
+    },
+    {
+        "id": "13124",
+        "nom": "PUY-DE-CORENT - CHEMIN OUEST",
+        "code": "13124",
+        "commune": "VEYRE-MONTON",
+        "code_postal": "63960",
+        "activite": "parapente delta  [ atterro ]",
+        "statut": "actif"
+    },
+    {
+        "id": "592",
+        "nom": "PUY-DE-CORENT - CHEMIN SUD",
+        "code": "592",
+        "commune": "CORENT",
+        "code_postal": "63120",
+        "activite": "parapente delta  [ atterro ]",
+        "statut": "actif"
+    },
+    {
+        "id": "442",
+        "nom": "SAINT-SANDOUX OFFICIEL",
+        "code": "442",
+        "commune": "ST SANDOUX",
+        "code_postal": "63450",
+        "activite": "parapente delta  [ atterro ]",
+        "statut": "actif"
+    },
+    {
+        "id": "13480",
+        "nom": "SAURIER - VILLAGE",
+        "code": "13480",
+        "commune": "SAURIER",
+        "code_postal": "63320",
+        "activite": "parapente  [ atterro ]",
+        "statut": "actif"
+    },
+    {
+        "id": "446",
+        "nom": "SAURIER CHAPELLE DE BRIONNET",
+        "code": "446",
+        "commune": "SAURIER",
+        "code_postal": "63320",
+        "activite": "parapente  [ déco ]",
+        "statut": "actif"
+    },
+    {
+        "id": "449",
+        "nom": "SAURIER LE CAMPING",
+        "code": "449",
+        "commune": "SAURIER",
+        "code_postal": "63320",
+        "activite": "parapente delta  [ atterro ]",
+        "statut": "actif"
+    },
+    {
+        "id": "448",
+        "nom": "SAURIER-CRESTE - PLATEAU DE LACHAUX",
+        "code": "448",
+        "commune": "SAINT DIERY",
+        "code_postal": "63320",
+        "activite": "parapente delta  [ déco ]",
+        "statut": "actif"
+    },
+    {
+        "id": "447",
+        "nom": "SAURIER-CRESTE - PUY DE ROCHECOURBIERE",
+        "code": "447",
+        "commune": "SAINT DIERY",
+        "code_postal": "63320",
+        "activite": "parapente  [ déco ]",
+        "statut": "actif"
+    },
+    {
+        "id": "13167",
+        "nom": "SUPER-BESSE - COL DE LA GENESTE",
+        "code": "13167",
+        "commune": "PICHERANDE",
+        "code_postal": "63113",
+        "activite": "parapente  [ atterro ]",
+        "statut": "actif"
+    },
+    {
+        "id": "590",
+        "nom": "SUPER-BESSE - LE CHAMBOURGUET",
+        "code": "590",
+        "commune": "BESSE ET ST ANASTAISE",
+        "code_postal": "63610",
+        "activite": "parapente  [ déco ]",
+        "statut": "actif"
+    },
+    {
+        "id": "503",
+        "nom": "SUPER-BESSE - LE MADALET",
+        "code": "503",
+        "commune": "BESSE ET ST ANASTAISE",
+        "code_postal": "63610",
+        "activite": "parapente  [ atterro ]",
+        "statut": "actif"
+    },
+    {
+        "id": "589",
+        "nom": "SUPER-BESSE - LE PAILLARET",
+        "code": "589",
+        "commune": "BESSE ET ST ANASTAISE",
+        "code_postal": "63610",
+        "activite": "parapente  [ déco ]",
+        "statut": "actif"
+    },
+    {
+        "id": "588",
+        "nom": "SUPER-BESSE - PUY DE LA PERDRIX",
+        "code": "588",
+        "commune": "CHAMBON SUR LAC",
+        "code_postal": "63790",
+        "activite": "parapente  [ déco ]",
+        "statut": "actif"
+    },
+    {
+        "id": "587",
+        "nom": "SUPER-BESSE - PUY FERRAND",
+        "code": "587",
+        "commune": "CHAMBON SUR LAC",
+        "code_postal": "63790",
+        "activite": "parapente  [ déco ]",
+        "statut": "actif"
+    },
+    {
+        "id": "1498",
+        "nom": "TROSSAGNE",
+        "code": "1498",
+        "commune": "ST PIERRE COLAMINE",
+        "code_postal": "63610",
+        "activite": "parapente  [ déco ]",
+        "statut": "actif"
+    },
+    {
+        "id": "450",
+        "nom": "VALBELEIX - LA ROCHE NITE",
+        "code": "450",
+        "commune": "VALBELEIX",
+        "code_postal": "63610",
+        "activite": "parapente delta  [ déco ]",
+        "statut": "actif"
+    },
+    {
+        "id": "13237",
+        "nom": "VALBELEIX - LE VERDIER",
+        "code": "13237",
+        "commune": "VALBELEIX",
+        "code_postal": "63610",
+        "activite": "parapente delta  [ atterro ]",
+        "statut": "actif"
+    },
+    {
+        "id": "451",
+        "nom": "VALBELEIX - LES FRAISSES",
+        "code": "451",
+        "commune": "VALBELEIX",
+        "code_postal": "63610",
+        "activite": "parapente delta  [ atterro ]",
+        "statut": "actif"
+    }
+]

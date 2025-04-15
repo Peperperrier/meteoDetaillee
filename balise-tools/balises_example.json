@@ -1,0 +1,10 @@
+[
+    {
+        "url" :"https://www.balisemeteo.com/balise.php?idBalise=2525",
+        "nom": "VIC SUR CERE"
+    },
+    {
+        "url" : "https://www.balisemeteo.com/balise.php?idBalise=176",
+        "nom" : "Le Claux Chabraire"
+    }
+]
