@@ -153,7 +153,10 @@
         "altitude": 429,
         "secteurs_vent": "N;NESecteurs de vent défavorables : S;SO;O;NOConditions aérologiques idéales : Non renseigné",
         "orientation_all": "N;NE",
-        "orientation": "NE"
+        "orientation": "NE",
+        "balise": [
+            "https://www.balisemeteo.com/balise.php?idBalise=71"
+        ]
     },
     {
         "id": "1070",
