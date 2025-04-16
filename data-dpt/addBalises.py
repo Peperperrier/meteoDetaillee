@@ -18,20 +18,29 @@ def add_balises_to_sites(sites_file, balises_file, output_file):
     
     # Parcourir chaque site et vérifier si une balise correspond
     for site in sites:
-        site_name = site.get("nom", "").lower().replace("-", " ").replace("saint", "st").replace("é", "e")  # Nom du site en minuscule sans tirets
-        print(f"Traitement du site : {site_name}")  # Afficher le nom du site en cours de traitement
-        site["balise"] = []  # Initialiser le tableau des balises pour chaque site
+        site_name = site.get("nom", "").lower().replace("-", " ").replace("saint", "st").replace("é", "e")
+        print(f"Traitement du site : {site_name}")
+
+        # Conserver les balises existantes si présentes
+        existing_balises = site.get("balise", [])
+        if isinstance(existing_balises, str):  # Si c'est une seule balise sous forme de string
+            existing_balises = [existing_balises]
+        site["balise"] = existing_balises.copy()  # Initialiser avec les balises existantes
         
         for balise in balises:
-            balise_name = balise.get("nom", "").lower().replace("-", " ").replace("saint", "st").replace("é", "e")   # Nom de la balise en minuscule sans tirets
-            if balise_name in site_name:  # Vérifier si le nom de la balise correspond au nom du site
-                print(f"✅balise trouvée: {balise_name}")  # Afficher le nom du site en cours de traitement
-                site["balise"].append(balise["url"])  # Ajouter l'URL de la balise au tableau
+            balise_name = balise.get("nom", "").lower().replace("-", " ").replace("saint", "st").replace("é", "e")
+            if balise_name in site_name:
+                print(f"✅balise trouvée: {balise_name}")
+                if balise["url"] not in site["balise"]:  # Éviter les doublons
+                    site["balise"].append(balise["url"])
         
-        # Supprimer le champ "balise" si aucune balise n'est trouvée
+        # Supprimer le champ "balise" uniquement si aucune balise n'est présente
         if not site["balise"]:
             del site["balise"]
-
+        else:
+            # Ajouter l'émoji au nom du site s'il a au moins une balise
+            if not site["nom"].endswith("🚩"):  # Éviter d'ajouter l'émoji plusieurs fois
+                site["nom"] = f"{site['nom']} 🚩"
 
     # Vérifier et remplacer les URLs spécifiques
     replace_specific_url(sites)

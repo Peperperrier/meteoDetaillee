@@ -1,7 +1,7 @@
 [
     {
         "id": "921",
-        "nom": "CHABANET - COTE DU BARON (N)",
+        "nom": "CHABANET - COTE DU BARON (N) 🚩",
         "code": "921",
         "commune": "PRIVAS",
         "code_postal": "07000",
@@ -49,7 +49,7 @@
     },
     {
         "id": "13163",
-        "nom": "FALAISES DE MIRABEL (S)",
+        "nom": "FALAISES DE MIRABEL (S) 🚩",
         "code": "13163",
         "commune": "MIRABEL",
         "code_postal": "07170",
@@ -142,7 +142,7 @@
     },
     {
         "id": "335",
-        "nom": "SAINT SEBASTIEN (NE)",
+        "nom": "SAINT SEBASTIEN (NE) 🚩",
         "code": "335",
         "commune": "ST PAUL LE JEUNE",
         "code_postal": "07460",
@@ -160,7 +160,7 @@
     },
     {
         "id": "1070",
-        "nom": "SAINT-DESIRAT - CHATELET (N)",
+        "nom": "SAINT-DESIRAT - CHATELET (N) 🚩",
         "code": "1070",
         "commune": "SAINT DESIRAT",
         "code_postal": "07340",
@@ -170,12 +170,15 @@
         "longitude": 4.7967,
         "altitude": 307,
         "secteurs_vent": "N;NE;E;NOSecteurs de vent défavorables : SE;S;SO;OConditions aérologiques idéales : 15-20 km/h N NE ou E",
+        "balise": [
+            "https://holfuy.com/fr/weather/1119"
+        ],
         "orientation_all": "N;NE;E;NO",
         "orientation": "N"
     },
     {
         "id": "333",
-        "nom": "SERRE DE BARRE - LES TAILLADES (NE)",
+        "nom": "SERRE DE BARRE - LES TAILLADES (NE) 🚩",
         "code": "333",
         "commune": "GRAVIERES",
         "code_postal": "07140",
@@ -193,7 +196,7 @@
     },
     {
         "id": "14161",
-        "nom": "SERRE DE BARRE TOUR DE VIGIE (S)",
+        "nom": "SERRE DE BARRE TOUR DE VIGIE (S) 🚩",
         "code": "14161",
         "commune": "BRAHIC",
         "code_postal": "07140",
@@ -211,7 +214,7 @@
     },
     {
         "id": "322",
-        "nom": "SERRE EN DON - LE BOIS DU SEIGNEUR (NE)",
+        "nom": "SERRE EN DON - LE BOIS DU SEIGNEUR (NE) 🚩",
         "code": "322",
         "commune": "ACCONS",
         "code_postal": "07160",
@@ -229,7 +232,7 @@
     },
     {
         "id": "331",
-        "nom": "TANARGUE - COL DE MEYRAND (SE)",
+        "nom": "TANARGUE - COL DE MEYRAND (SE) 🚩",
         "code": "331",
         "commune": "VALGORGE",
         "code_postal": "07110",
@@ -239,6 +242,9 @@
         "longitude": 4.0762,
         "altitude": 1386,
         "secteurs_vent": "SE;SSecteurs de vent défavorables : N;O;NOConditions aérologiques idéales : Non renseigné",
+        "balise": [
+            "https://www.openwindmap.org/PP1017"
+        ],
         "orientation_all": "SE;S",
         "orientation": "SE"
     },
@@ -499,7 +505,7 @@
     },
     {
         "id": "310",
-        "nom": "VIC-SUR-CERE - LE-BRUGET (O)",
+        "nom": "VIC-SUR-CERE - LE-BRUGET (O) 🚩",
         "code": "310",
         "commune": "VIC SUR CERE",
         "code_postal": "15800",
@@ -517,7 +523,7 @@
     },
     {
         "id": "370",
-        "nom": "CHASPINHAC (NE)",
+        "nom": "CHASPINHAC (NE) 🚩",
         "code": "370",
         "commune": "CHASPINHAC",
         "code_postal": "43700",
@@ -640,7 +646,7 @@
     },
     {
         "id": "13590",
-        "nom": "MONT-GERBIZON (E) (NE)",
+        "nom": "MONT-GERBIZON (E) (NE) 🚩",
         "code": "13590",
         "commune": "RETOURNAC",
         "code_postal": "43130",
@@ -651,6 +657,7 @@
         "altitude": 1064,
         "secteurs_vent": "NE;ESecteurs de vent défavorables : N;SE;S;SO;O;NOConditions aérologiques idéales : Vent de Nord/Est à Est et conditions thermiques",
         "balise": [
+            "https://holfuy.com/fr/weather/1332",
             "https://www.balisemeteo.com/balise.php?idBalise=5081"
         ],
         "orientation_all": "NE;E",
@@ -748,7 +755,7 @@
     },
     {
         "id": "568",
-        "nom": "BARJAC (SO)",
+        "nom": "BARJAC (SO) 🚩",
         "code": "568",
         "commune": "BARJAC",
         "code_postal": "48000",
@@ -766,7 +773,7 @@
     },
     {
         "id": "571",
-        "nom": "ISPAGNAC-PAROS (E)",
+        "nom": "ISPAGNAC-PAROS (E) 🚩",
         "code": "571",
         "commune": "ISPAGNAC",
         "code_postal": "48320",
@@ -799,7 +806,7 @@
     },
     {
         "id": "566",
-        "nom": "MENDE-EST (E)",
+        "nom": "MENDE-EST (E) 🚩",
         "code": "566",
         "commune": "MENDE",
         "code_postal": "48000",
@@ -810,6 +817,7 @@
         "altitude": 1010,
         "secteurs_vent": "ESecteurs de vent défavorables : Non renseignéConditions aérologiques idéales : Non renseigné",
         "balise": [
+            "https://www.openwindmap.org/PP1014",
             "https://www.balisemeteo.com/balise.php?idBalise=2912"
         ],
         "orientation_all": "E",
@@ -862,7 +870,7 @@
     },
     {
         "id": "13318",
-        "nom": "VILLARBUSSEL-LE VILLARD (N)",
+        "nom": "VILLARBUSSEL-LE VILLARD (N) 🚩",
         "code": "13318",
         "commune": "LES SALELLES",
         "code_postal": "48230",
@@ -940,7 +948,7 @@
     },
     {
         "id": "1504",
-        "nom": "LE MAREUILH (O)",
+        "nom": "LE MAREUILH (O) 🚩",
         "code": "1504",
         "commune": "MONT DORE",
         "code_postal": "63240",
@@ -950,6 +958,9 @@
         "longitude": 2.8294,
         "altitude": 1560,
         "secteurs_vent": "O;NOSecteurs de vent défavorables : N;NE;E;SE;S;SOConditions aérologiques idéales : Vent météo de secteur O/NO",
+        "balise": [
+            "https://holfuy.com/fr/weather/1471"
+        ],
         "orientation_all": "O;NO",
         "orientation": "O"
     },
@@ -1045,7 +1056,7 @@
     },
     {
         "id": "471",
-        "nom": "LE PUY DE DOME (S)",
+        "nom": "LE PUY DE DOME (S) 🚩",
         "code": "471",
         "commune": "ORCINES",
         "code_postal": "63870",
@@ -1055,12 +1066,16 @@
         "longitude": 2.9638,
         "altitude": 1440,
         "secteurs_vent": "N;NE;E;SE;S;SO;O;NOSecteurs de vent défavorables : Non renseignéConditions aérologiques idéales : Vent météo toutes orientations, conditions thermiques.",
+        "balise": [
+            "https://holfuy.com/fr/weather/1464",
+            "http://wwwobs.univ-bpclermont.fr/opgc/webcamcez.jpg"
+        ],
         "orientation_all": "N;NE;E;SE;S;SO;O;NO",
         "orientation": "S"
     },
     {
         "id": "1490",
-        "nom": "LE PUY GROS (S)",
+        "nom": "LE PUY GROS (S) 🚩",
         "code": "1490",
         "commune": "LE MONT DORE",
         "code_postal": "63240",
@@ -1070,6 +1085,9 @@
         "longitude": 2.7897,
         "altitude": 1485,
         "secteurs_vent": "E;SE;S;SO;OSecteurs de vent défavorables : N;NE;NOConditions aérologiques idéales : Vent météo de tendance sud ou conditions thermiques.",
+        "balise": [
+            "https://holfuy.com/fr/weather/1471"
+        ],
         "orientation_all": "E;SE;S;SO;O",
         "orientation": "S"
     },
@@ -1105,7 +1123,7 @@
     },
     {
         "id": "436",
-        "nom": "PIC SAINT-PIERRE (E)",
+        "nom": "PIC SAINT-PIERRE (E) 🚩",
         "code": "436",
         "commune": "ST-PIERRE-COLAMINE",
         "code_postal": "63610",
@@ -1116,6 +1134,7 @@
         "altitude": 990,
         "secteurs_vent": "N;NE;E;SE;SSecteurs de vent défavorables : SO;OConditions aérologiques idéales : Très bon site thermique et actif dès le matin en face sud.",
         "balise": [
+            "https://www.balisemeteo.com/balise.php?idBalise=46",
             "https://www.balisemeteo.com/balise.php?idBalise=1004"
         ],
         "orientation_all": "N;NE;E;SE;S",
@@ -1123,7 +1142,7 @@
     },
     {
         "id": "591",
-        "nom": "PUY DE CORENT (SO)",
+        "nom": "PUY DE CORENT (SO) 🚩",
         "code": "591",
         "commune": "VEYRE-MONTON",
         "code_postal": "63960",
@@ -1134,6 +1153,8 @@
         "altitude": 607,
         "secteurs_vent": "SE;S;SO;O;NOSecteurs de vent défavorables : N;NE;EConditions aérologiques idéales : Pas de vent ou vent météo de Sud à Nord-Ouest",
         "balise": [
+            "https://holfuy.com/fr/weather/1311",
+            "http://sbhome63378.dyndns.org:16251/view/view.shtml?id=49&imagePath=/mjpg/video.mjpg&size=1",
             "https://www.balisemeteo.com/balise.php?idBalise=1011"
         ],
         "orientation_all": "SE;S;SO;O;NO",
@@ -1141,7 +1162,7 @@
     },
     {
         "id": "1503",
-        "nom": "PUY DE L 'ANGLE (S)",
+        "nom": "PUY DE L 'ANGLE (S) 🚩",
         "code": "1503",
         "commune": "MONT DORE",
         "code_postal": "63240",
@@ -1151,12 +1172,15 @@
         "longitude": 2.84,
         "altitude": 1730,
         "secteurs_vent": "E;SE;S;SO;OSecteurs de vent défavorables : N;NE;NOConditions aérologiques idéales : Vent météo de secteur O/NO ou conditions thermiques",
+        "balise": [
+            "https://holfuy.com/fr/weather/1471"
+        ],
         "orientation_all": "E;SE;S;SO;O",
         "orientation": "S"
     },
     {
         "id": "1508",
-        "nom": "PUY DE L 'OUIRE (NO)",
+        "nom": "PUY DE L 'OUIRE (NO) 🚩",
         "code": "1508",
         "commune": "ORCIVAL",
         "code_postal": "63210",
@@ -1166,12 +1190,15 @@
         "longitude": 2.8314,
         "altitude": 1505,
         "secteurs_vent": "N;O;NOSecteurs de vent défavorables : NE;E;SE;S;SOConditions aérologiques idéales : Vent météo N/NO ou conditions thermiques.",
+        "balise": [
+            "https://holfuy.com/fr/weather/1471"
+        ],
         "orientation_all": "N;O;NO",
         "orientation": "NO"
     },
     {
         "id": "1510",
-        "nom": "PUY DE LA TACHE (NE)",
+        "nom": "PUY DE LA TACHE (NE) 🚩",
         "code": "1510",
         "commune": "CHAMBON SUR LAC",
         "code_postal": "63790",
@@ -1181,12 +1208,15 @@
         "longitude": 2.8454,
         "altitude": 1630,
         "secteurs_vent": "N;NE;E;SE;NOSecteurs de vent défavorables : S;SO;OConditions aérologiques idéales : Vent météo N/NE ou conditions thermiques",
+        "balise": [
+            "https://holfuy.com/fr/weather/1471"
+        ],
         "orientation_all": "N;NE;E;SE;NO",
         "orientation": "NE"
     },
     {
         "id": "441",
-        "nom": "PUY DE SAINT-SANDOUX (NE)",
+        "nom": "PUY DE SAINT-SANDOUX (NE) 🚩",
         "code": "441",
         "commune": "ST SANDOUX",
         "code_postal": "63450",
@@ -1197,6 +1227,7 @@
         "altitude": 780,
         "secteurs_vent": "N;NE;E;SESecteurs de vent défavorables : S;SO;O;NOConditions aérologiques idéales : Pas de vent ou vent météo de secteur Nord à Est.",
         "balise": [
+            "https://holfuy.com/fr/weather/1179",
             "https://www.balisemeteo.com/balise.php?idBalise=1003"
         ],
         "orientation_all": "N;NE;E;SE",
@@ -1204,7 +1235,7 @@
     },
     {
         "id": "443",
-        "nom": "PUY SAINT-ROMAIN (SO)",
+        "nom": "PUY SAINT-ROMAIN (SO) 🚩",
         "code": "443",
         "commune": "ST-MAURICE ES ALLIER",
         "code_postal": "63270",
@@ -1342,7 +1373,7 @@
     },
     {
         "id": "450",
-        "nom": "VALBELEIX - LA ROCHE NITE (SO)",
+        "nom": "VALBELEIX - LA ROCHE NITE (SO) 🚩",
         "code": "450",
         "commune": "VALBELEIX",
         "code_postal": "63610",
@@ -1353,6 +1384,7 @@
         "altitude": 1180,
         "secteurs_vent": "SO;OSecteurs de vent défavorables : N;NE;E;SE;S;NOConditions aérologiques idéales : Vent météo SO ou O pas trop fort.",
         "balise": [
+            "https://holfuy.com/fr/weather/866",
             "https://www.balisemeteo.com/balise.php?idBalise=1002"
         ],
         "orientation_all": "SO;O",
