@@ -1112,6 +1112,9 @@
         "longitude": 2.9893,
         "altitude": 990,
         "secteurs_vent": "N;NE;E;SE;SSecteurs de vent défavorables : SO;OConditions aérologiques idéales : Très bon site thermique et actif dès le matin en face sud.",
+        "balise": [
+            "https://www.balisemeteo.com/balise.php?idBalise=1004"
+        ],
         "orientation_all": "N;NE;E;SE;S",
         "orientation": "E"
     },
@@ -1190,6 +1193,9 @@
         "longitude": 3.1164,
         "altitude": 780,
         "secteurs_vent": "N;NE;E;SESecteurs de vent défavorables : S;SO;O;NOConditions aérologiques idéales : Pas de vent ou vent météo de secteur Nord à Est.",
+        "balise": [
+            "https://www.balisemeteo.com/balise.php?idBalise=1003"
+        ],
         "orientation_all": "N;NE;E;SE",
         "orientation": "NE"
     },

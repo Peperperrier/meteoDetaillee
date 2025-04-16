@@ -18,12 +18,12 @@ def add_balises_to_sites(sites_file, balises_file, output_file):
     
     # Parcourir chaque site et vérifier si une balise correspond
     for site in sites:
-        site_name = site.get("nom", "").lower().replace("-", " ")  # Nom du site en minuscule sans tirets
+        site_name = site.get("nom", "").lower().replace("-", " ").replace("saint", "st")  # Nom du site en minuscule sans tirets
         print(f"Traitement du site : {site_name}")  # Afficher le nom du site en cours de traitement
         site["balise"] = []  # Initialiser le tableau des balises pour chaque site
         
         for balise in balises:
-            balise_name = balise.get("nom", "").lower().replace("-", " ")  # Nom de la balise en minuscule sans tirets
+            balise_name = balise.get("nom", "").lower().replace("-", " ").replace("saint", "st")   # Nom de la balise en minuscule sans tirets
             if balise_name in site_name:  # Vérifier si le nom de la balise correspond au nom du site
                 print(f"✅balise trouvée: {balise_name}")  # Afficher le nom du site en cours de traitement
                 site["balise"].append(balise["url"])  # Ajouter l'URL de la balise au tableau
