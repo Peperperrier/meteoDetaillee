@@ -507,7 +507,10 @@
         "altitude": 1113,
         "secteurs_vent": "SO;O;NOSecteurs de vent défavorables : NE;E;SE;SConditions aérologiques idéales : vent faible ou modéré de ouest",
         "orientation_all": "SO;O;NO",
-        "orientation": "O"
+        "orientation": "O",
+        "balise": [
+            "https://www.balisemeteo.com/balise.php?idBalise=2525"
+        ]
     },
     {
         "id": "370",
@@ -644,6 +647,9 @@
         "longitude": 4.0007,
         "altitude": 1064,
         "secteurs_vent": "NE;ESecteurs de vent défavorables : N;SE;S;SO;O;NOConditions aérologiques idéales : Vent de Nord/Est à Est et conditions thermiques",
+        "balise": [
+            "https://www.balisemeteo.com/balise.php?idBalise=5081"
+        ],
         "orientation_all": "NE;E",
         "orientation": "NE"
     },
@@ -768,7 +774,10 @@
         "altitude": 932,
         "secteurs_vent": "ESecteurs de vent défavorables : N;S;SO;O;NOConditions aérologiques idéales : Non renseigné",
         "orientation_all": "E",
-        "orientation": "E"
+        "orientation": "E",
+        "balise": [
+            "https://www.balisemeteo.com/balise.php?idBalise=114"
+        ]
     },
     {
         "id": "570",
@@ -1197,7 +1206,10 @@
         "altitude": 776,
         "secteurs_vent": "N;E;SE;S;SO;O;NOSecteurs de vent défavorables : NEConditions aérologiques idéales : Vent météo de secteur Sud à Ouest, sinon pas de vent.",
         "orientation_all": "N;E;SE;S;SO;O;NO",
-        "orientation": "SO"
+        "orientation": "SO",
+        "balise": [
+            "https://www.balisemeteo.com/balise.php?idBalise=151"
+        ]
     },
     {
         "id": "446",
