@@ -4,6 +4,7 @@ import json
 def merge_json_files(input_folder, output_file):
     """
     Fusionne tous les fichiers JSON d'un dossier en un seul fichier JSON.
+    Seuls les fichiers dont le nom commence par "sites_ffvl" sont pris en compte.
     
     :param input_folder: Chemin du dossier contenant les fichiers JSON.
     :param output_file: Chemin du fichier JSON de sortie.
@@ -12,7 +13,8 @@ def merge_json_files(input_folder, output_file):
 
     # Parcourir tous les fichiers du dossier
     for filename in os.listdir(input_folder):
-        if filename.endswith(".json"):  # Vérifier si le fichier est un JSON
+        # Vérifier si le fichier est un JSON et commence par "sites_ffvl"
+        if filename.startswith("sites_ffvl") and filename.endswith(".json"):
             file_path = os.path.join(input_folder, filename)
             try:
                 # Charger le contenu du fichier JSON
@@ -35,10 +37,10 @@ def merge_json_files(input_folder, output_file):
         print(f"❌ Erreur lors de l'écriture du fichier de sortie : {e}")
 
 # Chemin du dossier contenant les fichiers JSON
-input_folder = "c:/Users/antho/Documents/soft/meteoDetaillee/data-dpt"
+input_folder = "."
 
 # Chemin du fichier JSON de sortie
-output_file = "c:/Users/antho/Documents/soft/meteoDetaillee/data-dpt/merged_sites.json"
+output_file = "../balise-tools/merged_sites.json"
 
 # Appeler la fonction pour fusionner les fichiers
 merge_json_files(input_folder, output_file)

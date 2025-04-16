@@ -44,8 +44,8 @@ def extract_active_balises(html_content):
 # active_balises = extract_active_balises(html_content)
 # print(active_balises)
 # Exemple d'utilisation
-html_content = "c:/Users/antho/Documents/soft/meteoDetaillee/balise-tools/response.html"
-output_json_file = "c:/Users/antho/Documents/soft/meteoDetaillee/balise-tools/balises.json"
+html_content = "./_4-response.html"
+output_json_file = "./balises.json"
 
 # Extraire les balises et les sites
 balises_and_sites = extract_active_balises(html_content)

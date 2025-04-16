@@ -1,7 +1,7 @@
 [
     {
         "id": "921",
-        "nom": "CHABANET - COTE DU BARON (N)",
+        "nom": "CHABANET - COTE DU BARON (N) 🚩",
         "code": "921",
         "commune": "PRIVAS",
         "code_postal": "07000",
@@ -12,7 +12,10 @@
         "altitude": 528,
         "secteurs_vent": "NSecteurs de vent défavorables : E;SE;S;SO;OConditions aérologiques idéales : leger vent du nord   attention aux rafales",
         "orientation_all": "N",
-        "orientation": "N"
+        "orientation": "N",
+        "balise": [
+            "https://www.balisemeteo.com/balise.php?idBalise=2395"
+        ]
     },
     {
         "id": "1012",
@@ -46,7 +49,7 @@
     },
     {
         "id": "13163",
-        "nom": "FALAISES DE MIRABEL (S)",
+        "nom": "FALAISES DE MIRABEL (S) 🚩",
         "code": "13163",
         "commune": "MIRABEL",
         "code_postal": "07170",
@@ -57,7 +60,10 @@
         "altitude": 550,
         "secteurs_vent": "SE;S;SOSecteurs de vent défavorables : N;NE;E;O;NOConditions aérologiques idéales : 15-20 km/h du sud",
         "orientation_all": "SE;S;SO",
-        "orientation": "S"
+        "orientation": "S",
+        "balise": [
+            "https://www.balisemeteo.com/balise.php?idBalise=2008"
+        ]
     },
     {
         "id": "318",
@@ -136,7 +142,7 @@
     },
     {
         "id": "335",
-        "nom": "SAINT SEBASTIEN (NE)",
+        "nom": "SAINT SEBASTIEN (NE) 🚩",
         "code": "335",
         "commune": "ST PAUL LE JEUNE",
         "code_postal": "07460",
@@ -147,11 +153,14 @@
         "altitude": 429,
         "secteurs_vent": "N;NESecteurs de vent défavorables : S;SO;O;NOConditions aérologiques idéales : Non renseigné",
         "orientation_all": "N;NE",
-        "orientation": "NE"
+        "orientation": "NE",
+        "balise": [
+            "https://www.balisemeteo.com/balise.php?idBalise=71"
+        ]
     },
     {
         "id": "1070",
-        "nom": "SAINT-DESIRAT - CHATELET (N)",
+        "nom": "SAINT-DESIRAT - CHATELET (N) 🚩",
         "code": "1070",
         "commune": "SAINT DESIRAT",
         "code_postal": "07340",
@@ -169,7 +178,7 @@
     },
     {
         "id": "333",
-        "nom": "SERRE DE BARRE - LES TAILLADES (NE)",
+        "nom": "SERRE DE BARRE - LES TAILLADES (NE) 🚩",
         "code": "333",
         "commune": "GRAVIERES",
         "code_postal": "07140",
@@ -180,11 +189,14 @@
         "altitude": 842,
         "secteurs_vent": "NE;ESecteurs de vent défavorables : O;NOConditions aérologiques idéales : Non renseigné",
         "orientation_all": "NE;E",
-        "orientation": "NE"
+        "orientation": "NE",
+        "balise": [
+            "https://www.balisemeteo.com/balise.php?idBalise=24"
+        ]
     },
     {
         "id": "14161",
-        "nom": "SERRE DE BARRE TOUR DE VIGIE (S)",
+        "nom": "SERRE DE BARRE TOUR DE VIGIE (S) 🚩",
         "code": "14161",
         "commune": "BRAHIC",
         "code_postal": "07140",
@@ -195,11 +207,14 @@
         "altitude": 895,
         "secteurs_vent": "SSecteurs de vent défavorables : NConditions aérologiques idéales : Non renseigné",
         "orientation_all": "S",
-        "orientation": "S"
+        "orientation": "S",
+        "balise": [
+            "https://www.balisemeteo.com/balise.php?idBalise=24"
+        ]
     },
     {
         "id": "322",
-        "nom": "SERRE EN DON - LE BOIS DU SEIGNEUR (NE)",
+        "nom": "SERRE EN DON - LE BOIS DU SEIGNEUR (NE) 🚩",
         "code": "322",
         "commune": "ACCONS",
         "code_postal": "07160",
@@ -210,11 +225,14 @@
         "altitude": 1164,
         "secteurs_vent": "N;NESecteurs de vent défavorables : E;SE;S;SO;O;NOConditions aérologiques idéales : 5 à 15 km/h NORD",
         "orientation_all": "N;NE",
-        "orientation": "NE"
+        "orientation": "NE",
+        "balise": [
+            "https://www.balisemeteo.com/balise.php?idBalise=80"
+        ]
     },
     {
         "id": "331",
-        "nom": "TANARGUE - COL DE MEYRAND (SE)",
+        "nom": "TANARGUE - COL DE MEYRAND (SE) 🚩",
         "code": "331",
         "commune": "VALGORGE",
         "code_postal": "07110",
@@ -487,7 +505,7 @@
     },
     {
         "id": "310",
-        "nom": "VIC-SUR-CERE - LE-BRUGET (O)",
+        "nom": "VIC-SUR-CERE - LE-BRUGET (O) 🚩",
         "code": "310",
         "commune": "VIC SUR CERE",
         "code_postal": "15800",
@@ -498,11 +516,216 @@
         "altitude": 1113,
         "secteurs_vent": "SO;O;NOSecteurs de vent défavorables : NE;E;SE;SConditions aérologiques idéales : vent faible ou modéré de ouest",
         "orientation_all": "SO;O;NO",
-        "orientation": "O"
+        "orientation": "O",
+        "balise": [
+            "https://www.balisemeteo.com/balise.php?idBalise=2525"
+        ]
+    },
+    {
+        "id": "13407",
+        "nom": "BURDIGNE-NORD (NO)",
+        "code": "13407",
+        "commune": "BURDIGNE",
+        "code_postal": "42220",
+        "activite": "parapente  [ déco ]",
+        "statut": "actif",
+        "latitude": 45.2674,
+        "longitude": 4.5865,
+        "altitude": 946,
+        "secteurs_vent": "N;NE;NOSecteurs de vent défavorables : SE;S;SO;OConditions aérologiques idéales : NNE avec conditions thermiques.",
+        "orientation_all": "N;NE;NO",
+        "orientation": "NO"
+    },
+    {
+        "id": "1423",
+        "nom": "BURDIGNES - GRAND-TONY (SE) 🚩",
+        "code": "1423",
+        "commune": "BURDIGNES",
+        "code_postal": "42220",
+        "activite": "parapente  [ déco ]",
+        "statut": "actif",
+        "latitude": 45.2499,
+        "longitude": 4.5371,
+        "altitude": 1087,
+        "secteurs_vent": "SE;SSecteurs de vent défavorables : N;NE;E;SO;O;NOConditions aérologiques idéales : Conditions de brise",
+        "orientation_all": "SE;S",
+        "orientation": "SE",
+        "balise": [
+            "https://www.balisemeteo.com/balise.php?idBalise=77"
+        ]
+    },
+    {
+        "id": "655",
+        "nom": "CHERIER - LES-ROCHES-DE-SAINTES-AGATHE (E)",
+        "code": "655",
+        "commune": "CHERIER",
+        "code_postal": "42430",
+        "activite": "parapente delta  [ déco ]",
+        "statut": "actif",
+        "latitude": 45.9859,
+        "longitude": 3.9246,
+        "altitude": 811,
+        "secteurs_vent": "N;NE;E;SE;SSecteurs de vent défavorables : SO;O;NOConditions aérologiques idéales : Non renseigné",
+        "orientation_all": "N;NE;E;SE;S",
+        "orientation": "E"
+    },
+    {
+        "id": "13306",
+        "nom": "CRET-DE-BOTTE - L 'ŒILLON-SUD (S)",
+        "code": "13306",
+        "commune": "VERANNE",
+        "code_postal": "42520",
+        "activite": "parapente  [ déco ]",
+        "statut": "actif",
+        "latitude": 45.3884,
+        "longitude": 4.6042,
+        "altitude": 1374,
+        "secteurs_vent": "SSecteurs de vent défavorables : N;NE;E;O;NOConditions aérologiques idéales : Non renseigné",
+        "orientation_all": "S",
+        "orientation": "S"
+    },
+    {
+        "id": "13305",
+        "nom": "CRET-DE-L 'ŒILLON-EST (NE)",
+        "code": "13305",
+        "commune": "PELUSSIN",
+        "code_postal": "42410",
+        "activite": "parapente  [ déco ]",
+        "statut": "actif",
+        "latitude": 45.3937,
+        "longitude": 4.6131,
+        "altitude": 1326,
+        "secteurs_vent": "NE;ESecteurs de vent défavorables : N;SE;S;SO;O;NOConditions aérologiques idéales : peu de vent météo,",
+        "orientation_all": "NE;E",
+        "orientation": "NE"
+    },
+    {
+        "id": "121",
+        "nom": "LA-JASSERIE (NO)",
+        "code": "121",
+        "commune": "LA VALLA EN GIER",
+        "code_postal": "42131",
+        "activite": "parapente delta  [ déco ]",
+        "statut": "actif",
+        "latitude": 45.3851,
+        "longitude": 4.5678,
+        "altitude": 1374,
+        "secteurs_vent": "N;O;NOSecteurs de vent défavorables : NE;E;SE;SConditions aérologiques idéales : vent météo NO et activité thermique",
+        "orientation_all": "N;O;NO",
+        "orientation": "NO"
+    },
+    {
+        "id": "14123",
+        "nom": "MAGIC BESSAT (SO)",
+        "code": "14123",
+        "commune": "LE BESSAT",
+        "code_postal": "42660",
+        "activite": "parapente  [ pente école ]",
+        "statut": "actif",
+        "latitude": 45.3727,
+        "longitude": 4.5,
+        "altitude": 1150,
+        "secteurs_vent": "SO;OSecteurs de vent défavorables : N;NE;E;SEConditions aérologiques idéales : Non renseigné",
+        "orientation_all": "SO;O",
+        "orientation": "SO"
+    },
+    {
+        "id": "161",
+        "nom": "MONT SEMIOL-SUD (S)",
+        "code": "161",
+        "commune": "CHATELNEUF",
+        "code_postal": "42940",
+        "activite": "parapente  [ déco ]",
+        "statut": "actif",
+        "latitude": 45.6331,
+        "longitude": 3.969,
+        "altitude": 972,
+        "secteurs_vent": "S;SOSecteurs de vent défavorables : Non renseignéConditions aérologiques idéales : Non renseigné",
+        "orientation_all": "S;SO",
+        "orientation": "S"
+    },
+    {
+        "id": "13310",
+        "nom": "MONT-MINISTRE (S)",
+        "code": "13310",
+        "commune": "CHUYER",
+        "code_postal": "42410",
+        "activite": "parapente  [ déco ]",
+        "statut": "actif",
+        "latitude": 45.4689,
+        "longitude": 4.6932,
+        "altitude": 756,
+        "secteurs_vent": "SSecteurs de vent défavorables : N;NE;E;O;NOConditions aérologiques idéales : Non renseigné",
+        "orientation_all": "S",
+        "orientation": "S"
+    },
+    {
+        "id": "159",
+        "nom": "MONT-SEMIOL-NORD (N)",
+        "code": "159",
+        "commune": "CHATELNEUF",
+        "code_postal": "42940",
+        "activite": "parapente  [ déco ]",
+        "statut": "actif",
+        "latitude": 45.6335,
+        "longitude": 3.9687,
+        "altitude": 1018,
+        "secteurs_vent": "NSecteurs de vent défavorables : Non renseignéConditions aérologiques idéales : Non renseigné",
+        "orientation_all": "N",
+        "orientation": "N"
+    },
+    {
+        "id": "13267",
+        "nom": "SALVARIS (NO)",
+        "code": "13267",
+        "commune": "LA VALLA EN GIER",
+        "code_postal": "42131",
+        "activite": "parapente delta  [ déco ]",
+        "statut": "actif",
+        "latitude": 45.4167,
+        "longitude": 4.4838,
+        "altitude": 1071,
+        "secteurs_vent": "N;NOSecteurs de vent défavorables : NE;E;SE;S;SO;OConditions aérologiques idéales : site N essentiellement thermique permettant de beaux départs de cross vers le plateau de la haute loire.",
+        "orientation_all": "N;NO",
+        "orientation": "NO"
+    },
+    {
+        "id": "13384",
+        "nom": "TOUR-MATAGRIN (NE) 🚩",
+        "code": "13384",
+        "commune": "VIOLAY",
+        "code_postal": "42780",
+        "activite": "parapente  [ déco ]",
+        "statut": "actif",
+        "latitude": 45.851,
+        "longitude": 4.3805,
+        "altitude": 996,
+        "secteurs_vent": "N;NESecteurs de vent défavorables : E;SE;S;SO;O;NOConditions aérologiques idéales : Vent faible de N à NE",
+        "balise": [
+            "https://www.openwindmap.org/PP371",
+            "https://www.balisemeteo.com/balise.php?idBalise=2371"
+        ],
+        "orientation_all": "N;NE",
+        "orientation": "NE"
+    },
+    {
+        "id": "3021",
+        "nom": "TREMOLET",
+        "code": "3021",
+        "commune": "SAINT-CHAMOND",
+        "code_postal": "42400",
+        "activite": "parapente  [ déco ]",
+        "statut": "actif",
+        "latitude": 45.4535,
+        "longitude": 4.5254,
+        "altitude": 652,
+        "secteurs_vent": "Non renseignéSecteurs de vent défavorables : Non renseignéConditions aérologiques idéales : Non renseigné",
+        "orientation_all": "Non renseigné",
+        "orientation": null
     },
     {
         "id": "370",
-        "nom": "CHASPINHAC (NE)",
+        "nom": "CHASPINHAC (NE) 🚩",
         "code": "370",
         "commune": "CHASPINHAC",
         "code_postal": "43700",
@@ -513,7 +736,10 @@
         "altitude": 931,
         "secteurs_vent": "NE;ESecteurs de vent défavorables : Non renseignéConditions aérologiques idéales : bon site de restitution",
         "orientation_all": "NE;E",
-        "orientation": "NE"
+        "orientation": "NE",
+        "balise": [
+            "https://www.balisemeteo.com/balise.php?idBalise=82"
+        ]
     },
     {
         "id": "374",
@@ -622,7 +848,7 @@
     },
     {
         "id": "13590",
-        "nom": "MONT-GERBIZON (E) (NE)",
+        "nom": "MONT-GERBIZON (E) (NE) 🚩",
         "code": "13590",
         "commune": "RETOURNAC",
         "code_postal": "43130",
@@ -633,7 +859,8 @@
         "altitude": 1064,
         "secteurs_vent": "NE;ESecteurs de vent défavorables : N;SE;S;SO;O;NOConditions aérologiques idéales : Vent de Nord/Est à Est et conditions thermiques",
         "balise": [
-            "https://holfuy.com/fr/weather/1332"
+            "https://holfuy.com/fr/weather/1332",
+            "https://www.balisemeteo.com/balise.php?idBalise=5081"
         ],
         "orientation_all": "NE;E",
         "orientation": "NE"
@@ -730,7 +957,7 @@
     },
     {
         "id": "568",
-        "nom": "BARJAC (SO)",
+        "nom": "BARJAC (SO) 🚩",
         "code": "568",
         "commune": "BARJAC",
         "code_postal": "48000",
@@ -741,11 +968,14 @@
         "altitude": 985,
         "secteurs_vent": "SO;OSecteurs de vent défavorables : Non renseignéConditions aérologiques idéales : Non renseigné",
         "orientation_all": "SO;O",
-        "orientation": "SO"
+        "orientation": "SO",
+        "balise": [
+            "https://www.balisemeteo.com/balise.php?idBalise=5072"
+        ]
     },
     {
         "id": "571",
-        "nom": "ISPAGNAC-PAROS (E)",
+        "nom": "ISPAGNAC-PAROS (E) 🚩",
         "code": "571",
         "commune": "ISPAGNAC",
         "code_postal": "48320",
@@ -756,7 +986,10 @@
         "altitude": 932,
         "secteurs_vent": "ESecteurs de vent défavorables : N;S;SO;O;NOConditions aérologiques idéales : Non renseigné",
         "orientation_all": "E",
-        "orientation": "E"
+        "orientation": "E",
+        "balise": [
+            "https://www.balisemeteo.com/balise.php?idBalise=114"
+        ]
     },
     {
         "id": "570",
@@ -775,7 +1008,7 @@
     },
     {
         "id": "566",
-        "nom": "MENDE-EST (E)",
+        "nom": "MENDE-EST (E) 🚩",
         "code": "566",
         "commune": "MENDE",
         "code_postal": "48000",
@@ -786,7 +1019,8 @@
         "altitude": 1010,
         "secteurs_vent": "ESecteurs de vent défavorables : Non renseignéConditions aérologiques idéales : Non renseigné",
         "balise": [
-            "https://www.openwindmap.org/PP1014"
+            "https://www.openwindmap.org/PP1014",
+            "https://www.balisemeteo.com/balise.php?idBalise=2912"
         ],
         "orientation_all": "E",
         "orientation": "E"
@@ -838,7 +1072,7 @@
     },
     {
         "id": "13318",
-        "nom": "VILLARBUSSEL-LE VILLARD (N)",
+        "nom": "VILLARBUSSEL-LE VILLARD (N) 🚩",
         "code": "13318",
         "commune": "LES SALELLES",
         "code_postal": "48230",
@@ -849,7 +1083,10 @@
         "altitude": 909,
         "secteurs_vent": "NSecteurs de vent défavorables : E;SE;S;SO;OConditions aérologiques idéales : Vent de secteur nord.",
         "orientation_all": "N",
-        "orientation": "N"
+        "orientation": "N",
+        "balise": [
+            "https://www.balisemeteo.com/balise.php?idBalise=3489"
+        ]
     },
     {
         "id": "14158",
@@ -913,7 +1150,7 @@
     },
     {
         "id": "1504",
-        "nom": "LE MAREUILH (O)",
+        "nom": "LE MAREUILH (O) 🚩",
         "code": "1504",
         "commune": "MONT DORE",
         "code_postal": "63240",
@@ -1021,7 +1258,7 @@
     },
     {
         "id": "471",
-        "nom": "LE PUY DE DOME (S)",
+        "nom": "LE PUY DE DOME (S) 🚩",
         "code": "471",
         "commune": "ORCINES",
         "code_postal": "63870",
@@ -1040,7 +1277,7 @@
     },
     {
         "id": "1490",
-        "nom": "LE PUY GROS (S)",
+        "nom": "LE PUY GROS (S) 🚩",
         "code": "1490",
         "commune": "LE MONT DORE",
         "code_postal": "63240",
@@ -1088,7 +1325,7 @@
     },
     {
         "id": "436",
-        "nom": "PIC SAINT-PIERRE (E)",
+        "nom": "PIC SAINT-PIERRE (E) 🚩",
         "code": "436",
         "commune": "ST-PIERRE-COLAMINE",
         "code_postal": "63610",
@@ -1099,14 +1336,15 @@
         "altitude": 990,
         "secteurs_vent": "N;NE;E;SE;SSecteurs de vent défavorables : SO;OConditions aérologiques idéales : Très bon site thermique et actif dès le matin en face sud.",
         "balise": [
-            "https://www.balisemeteo.com/balise.php?idBalise=46"
+            "https://www.balisemeteo.com/balise.php?idBalise=46",
+            "https://www.balisemeteo.com/balise.php?idBalise=1004"
         ],
         "orientation_all": "N;NE;E;SE;S",
         "orientation": "E"
     },
     {
         "id": "591",
-        "nom": "PUY DE CORENT (SO)",
+        "nom": "PUY DE CORENT (SO) 🚩",
         "code": "591",
         "commune": "VEYRE-MONTON",
         "code_postal": "63960",
@@ -1118,14 +1356,15 @@
         "secteurs_vent": "SE;S;SO;O;NOSecteurs de vent défavorables : N;NE;EConditions aérologiques idéales : Pas de vent ou vent météo de Sud à Nord-Ouest",
         "balise": [
             "https://holfuy.com/fr/weather/1311",
-            "http://sbhome63378.dyndns.org:16251/view/view.shtml?id=49&imagePath=/mjpg/video.mjpg&size=1"
+            "http://sbhome63378.dyndns.org:16251/view/view.shtml?id=49&imagePath=/mjpg/video.mjpg&size=1",
+            "https://www.balisemeteo.com/balise.php?idBalise=1011"
         ],
         "orientation_all": "SE;S;SO;O;NO",
         "orientation": "SO"
     },
     {
         "id": "1503",
-        "nom": "PUY DE L 'ANGLE (S)",
+        "nom": "PUY DE L 'ANGLE (S) 🚩",
         "code": "1503",
         "commune": "MONT DORE",
         "code_postal": "63240",
@@ -1143,7 +1382,7 @@
     },
     {
         "id": "1508",
-        "nom": "PUY DE L 'OUIRE (NO)",
+        "nom": "PUY DE L 'OUIRE (NO) 🚩",
         "code": "1508",
         "commune": "ORCIVAL",
         "code_postal": "63210",
@@ -1161,7 +1400,7 @@
     },
     {
         "id": "1510",
-        "nom": "PUY DE LA TACHE (NE)",
+        "nom": "PUY DE LA TACHE (NE) 🚩",
         "code": "1510",
         "commune": "CHAMBON SUR LAC",
         "code_postal": "63790",
@@ -1179,7 +1418,7 @@
     },
     {
         "id": "441",
-        "nom": "PUY DE SAINT-SANDOUX (NE)",
+        "nom": "PUY DE SAINT-SANDOUX (NE) 🚩",
         "code": "441",
         "commune": "ST SANDOUX",
         "code_postal": "63450",
@@ -1190,14 +1429,15 @@
         "altitude": 780,
         "secteurs_vent": "N;NE;E;SESecteurs de vent défavorables : S;SO;O;NOConditions aérologiques idéales : Pas de vent ou vent météo de secteur Nord à Est.",
         "balise": [
-            "https://holfuy.com/fr/weather/1179"
+            "https://holfuy.com/fr/weather/1179",
+            "https://www.balisemeteo.com/balise.php?idBalise=1003"
         ],
         "orientation_all": "N;NE;E;SE",
         "orientation": "NE"
     },
     {
         "id": "443",
-        "nom": "PUY SAINT-ROMAIN (SO)",
+        "nom": "PUY SAINT-ROMAIN (SO) 🚩",
         "code": "443",
         "commune": "ST-MAURICE ES ALLIER",
         "code_postal": "63270",
@@ -1208,7 +1448,10 @@
         "altitude": 776,
         "secteurs_vent": "N;E;SE;S;SO;O;NOSecteurs de vent défavorables : NEConditions aérologiques idéales : Vent météo de secteur Sud à Ouest, sinon pas de vent.",
         "orientation_all": "N;E;SE;S;SO;O;NO",
-        "orientation": "SO"
+        "orientation": "SO",
+        "balise": [
+            "https://www.balisemeteo.com/balise.php?idBalise=151"
+        ]
     },
     {
         "id": "446",
@@ -1332,7 +1575,7 @@
     },
     {
         "id": "450",
-        "nom": "VALBELEIX - LA ROCHE NITE (SO)",
+        "nom": "VALBELEIX - LA ROCHE NITE (SO) 🚩",
         "code": "450",
         "commune": "VALBELEIX",
         "code_postal": "63610",
@@ -1343,7 +1586,8 @@
         "altitude": 1180,
         "secteurs_vent": "SO;OSecteurs de vent défavorables : N;NE;E;SE;S;NOConditions aérologiques idéales : Vent météo SO ou O pas trop fort.",
         "balise": [
-            "https://holfuy.com/fr/weather/866"
+            "https://holfuy.com/fr/weather/866",
+            "https://www.balisemeteo.com/balise.php?idBalise=1002"
         ],
         "orientation_all": "SO;O",
         "orientation": "SO"

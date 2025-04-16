@@ -86,5 +86,17 @@
     {
         "url": "https://intranet.ffvl.fr/structure/949/balises/modifier/5072",
         "nom": "Barjac"
+    },
+    {
+        "url": "https://intranet.ffvl.fr/structure/267/balises/modifier/77",
+        "nom": "Burdignes"
+    },
+    {
+        "url": "https://intranet.ffvl.fr/structure/292/balises/modifier/162",
+        "nom": "Monts Madeleine"
+    },
+    {
+        "url": "https://www.balisemeteo.com/balise.php?idBalise=2371",
+        "nom": "Tour Matagrin"
     }
 ]

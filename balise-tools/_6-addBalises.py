@@ -82,7 +82,7 @@ def replace_specific_url(sites):
 
 # Chemins des fichiers
 sites_file = "./merged_sites.json"
-balises_file = "./balises_example.json"
+balises_file = "./balises_full.json"
 output_file = "./merged_sites_with_balises.json"
 
 # Ajouter les balises aux sites
