@@ -1,7 +1,7 @@
 [
     {
         "url" :"https://www.balisemeteo.com/balise.php?idBalise=2525",
-        "nom": "VIC-SUR-CERE"
+        "nom": "VIC SUR CERE"
     },
     {
         "url" : "https://www.balisemeteo.com/balise.php?idBalise=176",
@@ -77,7 +77,7 @@
     },
     {
         "url": "https://intranet.ffvl.fr/structure/949/balises/modifier/2912",
-        "nom": "Mende Est"
+        "nom": "Mende-Est"
     },
     {
         "url": "https://www.balisemeteo.com/balise.php?idBalise=3489",
