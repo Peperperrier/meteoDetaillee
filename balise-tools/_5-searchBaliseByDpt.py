@@ -78,7 +78,7 @@ def process_department(department):
     return False
 
 # Programme principal
-departments = ["07", "43", "42", "48", "15", "63", "69"]  # Liste des départements à traiter
+departments = ["07", "43", "42", "48", "15", "63", "69", "26"]  # Liste des départements à traiter
 successful_depts = []
 failed_depts = []
 
