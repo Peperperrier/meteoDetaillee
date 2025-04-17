@@ -1,299 +1,227 @@
 [
     {
-        "id": "13308",
-        "nom": "BRONDELLES",
-        "code": "13308",
-        "commune": "PELUSSIN",
-        "code_postal": "42410",
+        "id": "3140",
+        "nom": "BOUSSUIVRE",
+        "code": "3140",
+        "commune": "JOUX",
+        "code_postal": "69170",
         "activite": "parapente  [ atterro ]",
         "statut": "actif"
     },
     {
-        "id": "13407",
-        "nom": "BURDIGNE-NORD",
-        "code": "13407",
-        "commune": "BURDIGNE",
-        "code_postal": "42220",
+        "id": "13313",
+        "nom": "CHASSENOUD",
+        "code": "13313",
+        "commune": "LONGES",
+        "code_postal": "69420",
+        "activite": "parapente  [ atterro ]",
+        "statut": "actif"
+    },
+    {
+        "id": "13312",
+        "nom": "CRET DE CHASSENOUD",
+        "code": "13312",
+        "commune": "LONGES",
+        "code_postal": "69420",
         "activite": "parapente  [ déco ]",
         "statut": "actif"
     },
     {
-        "id": "13408",
-        "nom": "BURDIGNE-NORD",
-        "code": "13408",
-        "commune": "BURDIGNE",
-        "code_postal": "42220",
-        "activite": "parapente  [ atterro ]",
-        "statut": "actif"
-    },
-    {
-        "id": "1423",
-        "nom": "BURDIGNES - GRAND-TONY",
-        "code": "1423",
-        "commune": "BURDIGNES",
-        "code_postal": "42220",
-        "activite": "parapente  [ déco ]",
-        "statut": "actif"
-    },
-    {
-        "id": "14214",
-        "nom": "CHAMPAILLER",
-        "code": "14214",
-        "commune": "PELUSSIN",
-        "code_postal": "42410",
-        "activite": "parapente  [ atterro ]",
-        "statut": "actif"
-    },
-    {
-        "id": "13307",
-        "nom": "CHAUMIENNE - ŒILLON-SUD",
-        "code": "13307",
-        "commune": "VERANNE",
-        "code_postal": "42520",
-        "activite": "parapente  [ atterro ]",
-        "statut": "actif"
-    },
-    {
-        "id": "656",
-        "nom": "CHERIER",
-        "code": "656",
-        "commune": "CHERIER",
-        "code_postal": "42430",
-        "activite": "parapente delta  [ atterro ]",
-        "statut": "actif"
-    },
-    {
-        "id": "655",
-        "nom": "CHERIER - LES-ROCHES-DE-SAINTES-AGATHE",
-        "code": "655",
-        "commune": "CHERIER",
-        "code_postal": "42430",
+        "id": "14125",
+        "nom": "CROIX RAMPAU",
+        "code": "14125",
+        "commune": "POLEYMIEUX AU MONT D'OR",
+        "code_postal": "69250",
         "activite": "parapente delta  [ déco ]",
         "statut": "actif"
     },
     {
-        "id": "13311",
-        "nom": "CHUYER - CIMETIERE",
-        "code": "13311",
-        "commune": "CHUYER",
-        "code_postal": "42520",
-        "activite": "parapente  [ atterro ]",
-        "statut": "actif"
-    },
-    {
-        "id": "169",
-        "nom": "COURREAU - LES-PLATEAUX",
-        "code": "169",
-        "commune": "ST BONNET LE COURREAU",
-        "code_postal": "42940",
-        "activite": "delta  [ treuil ]",
-        "statut": "actif"
-    },
-    {
-        "id": "13306",
-        "nom": "CRET-DE-BOTTE - L 'ŒILLON-SUD",
-        "code": "13306",
-        "commune": "VERANNE",
-        "code_postal": "42520",
-        "activite": "parapente  [ déco ]",
-        "statut": "actif"
-    },
-    {
-        "id": "13305",
-        "nom": "CRET-DE-L 'ŒILLON-EST",
-        "code": "13305",
-        "commune": "PELUSSIN",
-        "code_postal": "42410",
-        "activite": "parapente  [ déco ]",
-        "statut": "actif"
-    },
-    {
-        "id": "3125",
-        "nom": "LA CHABURE",
-        "code": "3125",
-        "commune": "SAINT-JEAN-BONNEFONDS",
-        "code_postal": "42650",
-        "activite": "parapente  [ atterro ]",
-        "statut": "actif"
-    },
-    {
-        "id": "167",
-        "nom": "LA CHAMBA - PIC PELE OU VIMONT",
-        "code": "167",
-        "commune": "LA CHAMBA",
-        "code_postal": "42440",
-        "activite": "parapente  [ déco ]",
-        "statut": "non praticable définitivement"
-    },
-    {
-        "id": "2011",
-        "nom": "LA JASSERIE",
-        "code": "2011",
-        "commune": "LE BESSAT",
-        "code_postal": "42660",
-        "activite": "snowkite",
-        "statut": "non praticable définitivement"
-    },
-    {
-        "id": "121",
-        "nom": "LA-JASSERIE",
-        "code": "121",
-        "commune": "LA VALLA EN GIER",
-        "code_postal": "42131",
+        "id": "1534",
+        "nom": "GRAND CRET",
+        "code": "1534",
+        "commune": "QUINCIE",
+        "code_postal": "69430",
         "activite": "parapente delta  [ déco ]",
+        "statut": "non praticable définitivement"
+    },
+    {
+        "id": "1337",
+        "nom": "LA LIOUFFE",
+        "code": "1337",
+        "commune": "ANCY",
+        "code_postal": "69490",
+        "activite": "parapente  [ déco ]",
         "statut": "actif"
     },
     {
-        "id": "2012",
-        "nom": "LA-JASSERIE",
-        "code": "2012",
-        "commune": "LE BESSAT",
-        "code_postal": "42660",
-        "activite": "snowkite",
+        "id": "5105",
+        "nom": "LA LIOUFFE",
+        "code": "5105",
+        "commune": "ANCY",
+        "code_postal": "69490",
+        "activite": "parapente  [ déco ]",
         "statut": "actif"
     },
     {
-        "id": "14123",
-        "nom": "MAGIC BESSAT",
-        "code": "14123",
-        "commune": "LE BESSAT",
-        "code_postal": "42660",
+        "id": "5220",
+        "nom": "LE PLAT DU MONT",
+        "code": "5220",
+        "commune": "SAINT-FORGEUX",
+        "code_postal": "69490",
+        "activite": "parapente  [ atterro ]",
+        "statut": "actif"
+    },
+    {
+        "id": "5107",
+        "nom": "LES MARTINIERES",
+        "code": "5107",
+        "commune": "SAINT-FORGEUX",
+        "code_postal": "69490",
+        "activite": "parapente  [ déco ]",
+        "statut": "actif"
+    },
+    {
+        "id": "13611",
+        "nom": "LETRA",
+        "code": "13611",
+        "commune": "LETRA",
+        "code_postal": "69620",
+        "activite": "parapente  [ déco ]",
+        "statut": "actif"
+    },
+    {
+        "id": "13612",
+        "nom": "LETRA",
+        "code": "13612",
+        "commune": "LETRA",
+        "code_postal": "69620",
+        "activite": "parapente  [ atterro ]",
+        "statut": "actif"
+    },
+    {
+        "id": "1979",
+        "nom": "MARENNES - PENTE-ECOLE",
+        "code": "1979",
+        "commune": "MARENNES",
+        "code_postal": "69970",
         "activite": "parapente  [ pente école ]",
         "statut": "actif"
     },
     {
-        "id": "161",
-        "nom": "MONT SEMIOL-SUD",
-        "code": "161",
-        "commune": "CHATELNEUF",
-        "code_postal": "42940",
+        "id": "3014",
+        "nom": "MAZIEUX",
+        "code": "3014",
+        "commune": "MONTROTTIER",
+        "code_postal": "69770",
         "activite": "parapente  [ déco ]",
-        "statut": "actif"
+        "statut": "actif autorisation systematique requise"
     },
     {
-        "id": "13310",
-        "nom": "MONT-MINISTRE",
-        "code": "13310",
-        "commune": "CHUYER",
-        "code_postal": "42410",
-        "activite": "parapente  [ déco ]",
-        "statut": "actif"
-    },
-    {
-        "id": "159",
-        "nom": "MONT-SEMIOL-NORD",
-        "code": "159",
-        "commune": "CHATELNEUF",
-        "code_postal": "42940",
-        "activite": "parapente  [ déco ]",
-        "statut": "actif"
-    },
-    {
-        "id": "160",
-        "nom": "MONT-SEMIOL-NORD",
-        "code": "160",
-        "commune": "CHATELNEUF",
-        "code_postal": "42940",
-        "activite": "parapente  [ atterro ]",
-        "statut": "actif"
-    },
-    {
-        "id": "162",
-        "nom": "MONT-SEMIOL-SUD",
-        "code": "162",
-        "commune": "CHATELNEUF",
-        "code_postal": "42940",
-        "activite": "parapente  [ atterro ]",
-        "statut": "actif"
-    },
-    {
-        "id": "1079",
-        "nom": "MOULIN-DU-BOST - JASSERIE",
-        "code": "1079",
-        "commune": "LA VALLA EN GIER",
-        "code_postal": "42131",
-        "activite": "parapente delta  [ atterro ]",
-        "statut": "actif"
-    },
-    {
-        "id": "13309",
-        "nom": "PELUSSIN - LE CHATEAU",
-        "code": "13309",
-        "commune": "PELUSSIN",
-        "code_postal": "42410",
-        "activite": "parapente  [ atterro ]",
-        "statut": "actif"
-    },
-    {
-        "id": "122",
-        "nom": "SAGNES - JASSERIE",
-        "code": "122",
-        "commune": "LA VALLA EN GIER",
-        "code_postal": "42131",
-        "activite": "parapente delta  [ atterro ]",
-        "statut": "actif"
-    },
-    {
-        "id": "166",
-        "nom": "SAIL SOUS COUZAN",
-        "code": "166",
-        "commune": "SAIL SOUS COUZAN",
-        "code_postal": "42890",
-        "activite": "parapente  [ atterro ]",
-        "statut": "actif"
-    },
-    {
-        "id": "164",
-        "nom": "SAIL SOUS COUZAN - CHATEAU",
-        "code": "164",
-        "commune": "SAIL SOUS COUZAN",
-        "code_postal": "42890",
+        "id": "14130",
+        "nom": "OINGT",
+        "code": "14130",
+        "commune": "OINGT",
+        "code_postal": "69620",
         "activite": "parapente  [ déco ]",
         "statut": "non praticable définitivement"
     },
     {
-        "id": "165",
-        "nom": "SAIL SOUS COUZAN - LE GRAND MIOLIN",
-        "code": "165",
-        "commune": "SAIL SOUS COUZAN",
-        "code_postal": "42890",
-        "activite": "parapente  [ déco ]",
-        "statut": "non praticable définitivement"
+        "id": "14131",
+        "nom": "OINGT",
+        "code": "14131",
+        "commune": "OINGT",
+        "code_postal": "69620",
+        "activite": "parapente  [ atterro ]",
+        "statut": "interdit"
     },
     {
-        "id": "163",
-        "nom": "SAIL-SOUS-COUZAN",
-        "code": "163",
-        "commune": "SAIL SOUS COUZAH",
-        "code_postal": "42890",
-        "activite": "parapente  [ atterro ]",
+        "id": "5106",
+        "nom": "PLAT DU MONT",
+        "code": "5106",
+        "commune": "SAINT-FORGEUX",
+        "code_postal": "69490",
+        "activite": "parapente  [ déco ]",
         "statut": "actif"
     },
     {
-        "id": "13267",
-        "nom": "SALVARIS",
-        "code": "13267",
-        "commune": "LA VALLA EN GIER",
-        "code_postal": "42131",
+        "id": "641",
+        "nom": "QUINCIE - RAMIERS",
+        "code": "641",
+        "commune": "QUINCIE",
+        "code_postal": "69430",
         "activite": "parapente delta  [ déco ]",
         "statut": "actif"
     },
     {
-        "id": "13384",
-        "nom": "TOUR-MATAGRIN",
-        "code": "13384",
-        "commune": "VIOLAY",
-        "code_postal": "42780",
+        "id": "1022",
+        "nom": "QUINCIE - RAMIERS - FAYOLLES",
+        "code": "1022",
+        "commune": "QUINCIE",
+        "code_postal": "69430",
+        "activite": "parapente delta  [ déco ]",
+        "statut": "actif"
+    },
+    {
+        "id": "986",
+        "nom": "QUINCIE - RAMIERS - QUINCIE LA PALUD",
+        "code": "986",
+        "commune": "QUINCIE",
+        "code_postal": "69430",
+        "activite": "parapente delta  [ atterro ]",
+        "statut": "actif"
+    },
+    {
+        "id": "14129",
+        "nom": "SAINTE MARIE",
+        "code": "14129",
+        "commune": "SAINT ETIENNE LA VARENNE",
+        "code_postal": "69460",
+        "activite": "parapente delta  [ atterro ]",
+        "statut": "actif"
+    },
+    {
+        "id": "1708",
+        "nom": "SAINTE-MARIE",
+        "code": "1708",
+        "commune": "ST ETIENNE LA VARENNE",
+        "code_postal": "69198",
         "activite": "parapente  [ déco ]",
         "statut": "actif"
     },
     {
-        "id": "3021",
-        "nom": "TREMOLET",
-        "code": "3021",
-        "commune": "SAINT-CHAMOND",
-        "code_postal": "42400",
-        "activite": "parapente  [ déco ]",
+        "id": "1709",
+        "nom": "SAINTE-MARIE",
+        "code": "1709",
+        "commune": "ST ETIENNE LA VARENNE",
+        "code_postal": "69198",
+        "activite": "parapente  [ atterro ]",
+        "statut": "non praticable définitivement"
+    },
+    {
+        "id": "3062",
+        "nom": "ST BONNET LE FROID",
+        "code": "3062",
+        "commune": "CHEVINAY",
+        "code_postal": "69210",
+        "activite": "parapente  [ déco atterro ]",
+        "statut": "actif"
+    },
+    {
+        "id": "5221",
+        "nom": "TALARU",
+        "code": "5221",
+        "commune": "SAINT-FORGEUX",
+        "code_postal": "69490",
+        "activite": "parapente  [ atterro ]",
+        "statut": "actif"
+    },
+    {
+        "id": "1338",
+        "nom": "TEILLOUX - LA LIOUFFE",
+        "code": "1338",
+        "commune": "ANCY",
+        "code_postal": "69490",
+        "activite": "parapente  [ atterro ]",
         "statut": "actif"
     }
 ]

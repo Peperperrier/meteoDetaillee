@@ -18,7 +18,7 @@ def add_balises_to_sites(sites_file, balises_file, output_file):
     
     # Parcourir chaque site et vérifier si une balise correspond
     for site in sites:
-        site_name = site.get("nom", "").lower().replace("-", " ").replace("saint", "st").replace("é", "e")
+        site_name = site.get("nom", "").lower().replace("-", " ").replace("saint", "st").replace("é", "e").replace("ff", "f")
         print(f"Traitement du site : {site_name}")
 
         # Conserver les balises existantes si présentes
@@ -28,7 +28,7 @@ def add_balises_to_sites(sites_file, balises_file, output_file):
         site["balise"] = existing_balises.copy()  # Initialiser avec les balises existantes
         
         for balise in balises:
-            balise_name = balise.get("nom", "").lower().replace("-", " ").replace("saint", "st").replace("é", "e")
+            balise_name = balise.get("nom", "").lower().replace("-", " ").replace("saint", "st").replace("ff", "f")
             if balise_name in site_name:
                 print(f"✅balise trouvée: {balise_name}")
                 if balise["url"] not in site["balise"]:  # Éviter les doublons
@@ -82,7 +82,7 @@ def replace_specific_url(sites):
 
 # Chemins des fichiers
 sites_file = "./merged_sites.json"
-balises_file = "./balises_full.json"
+balises_file = "./balises_all.json"
 output_file = "./merged_sites_with_balises.json"
 
 # Ajouter les balises aux sites
