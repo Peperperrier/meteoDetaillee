@@ -1,7 +1,7 @@
 [
     {
         "nom_actuel": "CONILIS",
-        "nouveau_nom": "Conil (SO)",
+        "nouveau_nom": "CONIL (SO)",
         "nouvelle_orientation": "SO"
     },
     {
@@ -13,5 +13,44 @@
         "nom_actuel": "COL DE ROUSSET",
         "nouveau_nom": "COL DE ROUSSET (SO)",
         "nouvelle_orientation": "SO"
+    },
+    {
+        "nom_actuel": "SAINTE ANNE",
+        "nouveau_nom": "SAINTE ANNE (SO)",
+        "nouvelle_orientation": "SO"
+    },
+    {
+        "nom_actuel": "RETOURNAC",
+        "supprimer": true
+    },
+    {
+        "nom_actuel": "LONGEVAL",
+        "supprimer": true
+    } ,
+    {
+        "nom_actuel": "TYROLIENNE - CASCADE-DES-SALINS",
+        "supprimer": true
+    },    
+    {
+        "nom_actuel": "TRUC SAINT BONNET",
+        "nouveau_nom": "TRUC SAINT BONNET (SO)",
+        "nouvelle_orientation": "SO"
+    },    
+    {
+        "nom_actuel": "LA LIOUFFE 🚩",
+        "supprimer": true
+    },
+    {        
+        "nom_actuel": "TREMOLET",
+        "supprimer": true
+    },
+    {        
+        "nom_actuel": "LAVOUTE-SUR-LOIRE - CHASSAURE - RELAIS (N)",
+        "supprimer": true
+    },    
+    {
+        "nom_actuel": "MONT-GERBIZON (E) (NE) 🚩",
+        "nouveau_nom": "MONT-GERBIZON (E) 🚩",
+        "nouvelle_orientation": "E"
     }
 ]
